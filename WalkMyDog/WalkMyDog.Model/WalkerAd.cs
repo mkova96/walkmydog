@@ -15,7 +15,7 @@ namespace WalkMyDog.Model
 
         }
         public WalkerAd(double Price, string Title, AdStatus AdStatus, string Description,
-        DateTime Date, int DogsNumber, int Hours)
+        DateTime Date, int DogsNumber, int Hours, Walker Walker)
             : base(Price, Title, AdStatus, Description, Date, DogsNumber, Hours)
         {
             this.Walker = Walker;

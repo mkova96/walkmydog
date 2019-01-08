@@ -9,28 +9,21 @@ namespace WalkMyDog.BaseLib
 {
     public interface IMainFormController
     {
-        //void ShowNannyForm(Form LoginView);
-        //void CreateNanny(INannyView NannyView);
+        void ShowWalkerForm(Form LoginView);
+        void CreateWalker(IWalkerView WalkerView);
         void ShowLoginForm(IMainView MainView);
         void LoginUser(ILoginView LoginView);
-        /*void ShowMainForm();
-        void ShowMyCooperations();
-        void ShowParentForm(Form LoginView);
-        void CreateParent(IParentView ParentView);
-        void ShowOfferForm();
+        void ShowMainForm();
+        void ShowOwnerForm(Form LoginView);
+        void CreateOwner(IOwnerView OwnerView);
+        void ShowAdForm();
         void ShowMyProfile();
-        void CreateOffer(IOfferView OfferView);
-        void ShowOfferForm(int Id, IMainView MinView);
-        void ShowCooperation(int Id);
-        void UpdateCooperation(ICooperationView CooperationView);
-        void ShowReview(int CooperationId);
-        void SaveReview(IReviewView ReviewView);
-        void ShowReviews(int NannyId);
-        void ShowOwner(IOfferView OfferView);*/
+        void CreateAd(IAdView AdView);
+        void ShowAdForm(int Id, IMainView MinView);
+        void ShowOwner(IAdView AdView);
         void Logout(IMainView MainView);
-        /*void ApplyToOffer(int Id);
-
-        void InitializeLists(IMainView MainView);*/
+        void ApplyToAd(int Id);
+        void InitializeLists(IMainView MainView);
 
 
 

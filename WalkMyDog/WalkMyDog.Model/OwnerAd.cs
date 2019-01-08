@@ -9,7 +9,7 @@ namespace WalkMyDog.Model
     {
         public virtual Owner Owner { get; set; }
         public OwnerAd(double Price, string Title, AdStatus AdStatus, string Description,
-        DateTime Date, int DogsNumber, int Hours)
+        DateTime Date, int DogsNumber, int Hours, Owner Owner)
             : base(Price, Title, AdStatus, Description, Date, DogsNumber, Hours)
         {
             this.Owner = Owner;

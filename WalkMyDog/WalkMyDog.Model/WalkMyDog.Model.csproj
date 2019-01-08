@@ -41,6 +41,7 @@
     <Compile Include="Ad.cs" />
     <Compile Include="Admin.cs" />
     <Compile Include="EntityBase.cs" />
+    <Compile Include="Factories\AdFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="OwnerAd.cs" />

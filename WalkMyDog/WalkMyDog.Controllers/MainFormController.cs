@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WalkMyDog.BaseLib;
+using WalkMyDog.Model;
+using WalkMyDog.Model.Repositories;
 
 namespace WalkMyDog.Controllers
 {
@@ -14,23 +16,13 @@ namespace WalkMyDog.Controllers
 
         private readonly IWindowFormsFactory WindowFormsFactory = null;
         private readonly IUserRepository UserRepository = null;
-        private readonly IOfferRepository OfferRepository = null;
-        private readonly ICooperationRepository CooperationRepository = null;
+        private readonly IAdRepository AdRepository = null;
 
-        public MainFormController(IWindowFormsFactory WindowsFormsFactory, IUserRepository UserRepository
-            , IOfferRepository OfferRepository, ICooperationRepository CooperationRepository)
+        public MainFormController(IWindowFormsFactory WindowsFormsFactory, IUserRepository UserRepository, IAdRepository AdRepository)
         {
             this.WindowFormsFactory = WindowsFormsFactory;
             this.UserRepository = UserRepository;
-            this.OfferRepository = OfferRepository;
-            this.CooperationRepository = CooperationRepository;
-
-        }
-        public void ShowMyCooperations()
-        {
-            CooperationController CooperationController = new CooperationController();
-            ICooperationsView CooperationsView = WindowFormsFactory.CreateCooperationsView(this);
-            CooperationController.ShowMyCooperations(CooperationsView, CurrentUser);
+            this.AdRepository = AdRepository;
         }
 
         public void ShowMainForm()
@@ -44,37 +36,29 @@ namespace WalkMyDog.Controllers
             mainForm.HideLoginButton();
             mainForm.SetWelcomeLabel("Welcome " + CurrentUser.Name);
             mainForm.EnableMenu();
-            mainForm.NannyOffers = getNannyOffers();
-            mainForm.NannyOffers = getNannyOffers();
+            mainForm.WalkerAds = getWalkerAds();
+            mainForm.WalkerAds = getWalkerAds();
 
             var form = (Form)mainForm;
             form.Show();
         }
-
-        public void ShowReviews(int NannyId)
-        {
-            ReviewController ReviewController = new ReviewController();
-            IReviewsView ReviewsView = WindowFormsFactory.CreateReviewsView(this);
-            ReviewController.ShowReviews(ReviewsView, NannyId, UserRepository);
-        }
-
-        public void ShowOwner(IOfferView OfferView)
+        public void ShowOwner(IAdView AdView)
         {
 
-            ShowProfile(GetOwner(OfferView.OfferId, OfferRepository));
+            ShowProfile(GetOwner(AdView.AdId, AdRepository));
 
         }
 
-        private User GetOwner(int Id, IOfferRepository OfferRepository)
+        private User GetOwner(int Id, IAdRepository AdRepository)
         {
-            Offer Offer = OfferRepository.GetNannyOffer(Id);
-            if (Offer != null)
+            Ad Ad = AdRepository.GetWalkerAd(Id);
+            if (Ad != null)
             {
-                NannyOffer o = (NannyOffer)Offer;
-                return o.Nanny;
+                WalkerAd o = (WalkerAd)Ad;
+                return o.Walker;
             }
-            ParentOffer po = (ParentOffer)OfferRepository.GetParentOffer(Id);
-            return po.Parent;
+            OwnerAd po = (OwnerAd)AdRepository.GetOwnerAd(Id);
+            return po.Owner;
 
 
         }
@@ -86,36 +70,36 @@ namespace WalkMyDog.Controllers
 
         public void ShowProfile(User User)
         {
-            if (User.UserType == UserType.NANNY)
+            if (User.UserType == UserType.WALKER)
             {
-                NannyController NannyController = new NannyController();
-                INannyView NannyView = WindowFormsFactory.CreateNannyView(this);
+                WalkerController WalkerController = new WalkerController();
+                IWalkerView WalkerView = WindowFormsFactory.CreateWalkerView(this);
                 if (User.Id == CurrentUser.Id)
                 {
-                    NannyView.AdjustEditView();
+                    WalkerView.AdjustEditView();
                 }
                 else
                 {
-                    NannyView.AdjustOuterView();
+                    WalkerView.AdjustOuterView();
 
                 }
-                NannyController.ShowMyProfile(NannyView, (Nanny)User);
+                WalkerController.ShowMyProfile(WalkerView, (Walker)User);
 
             }
-            else if (User.UserType == UserType.PARENT)
+            else if (User.UserType == UserType.OWNER)
             {
-                ParentController ParentController = new ParentController();
-                IParentView ParentView = new ParentForm(this);
+                OwnerController OwnerController = new OwnerController();
+                IOwnerView OwnerView = new OwnerForm(this);
                 if (User.Id == CurrentUser.Id)
                 {
-                    ParentView.AdjustEditView();
+                    OwnerView.AdjustEditView();
                 }
                 else
                 {
-                    ParentView.AdjustOuterView();
+                    OwnerView.AdjustOuterView();
 
                 }
-                ParentController.ShowMyProfile(ParentView, (Parent)User);
+                OwnerController.ShowMyProfile(OwnerView, (Owner)User);
             }
             else
             {
@@ -126,36 +110,36 @@ namespace WalkMyDog.Controllers
 
         public void InitializeLists(IMainView mainForm)
         {
-            mainForm.NannyOffers = getNannyOffers();
-            mainForm.ParentOffers = getParentOffers();
+            mainForm.WalkerAds = getWalkerAds();
+            mainForm.OwnerAds = getOwnerAds();
         }
 
-        private List<ParentOffer> getParentOffers()
+        private List<OwnerAd> getOwnerAds()
         {
 
-            List<ParentOffer> offers = (List<ParentOffer>)OfferRepository.GetAllParentOffers();
-            if (offers == null || offers.Count == 0)
+            List<OwnerAd> Ads = (List<OwnerAd>)AdRepository.GetAllOwnerAds();
+            if (Ads == null || Ads.Count == 0)
             {
-                return new List<ParentOffer>();
+                return new List<OwnerAd>();
             }
-            int end = offers.Count < 5 ? offers.Count : 5;
-            return offers.GetRange(0, end);
+            int end = Ads.Count < 5 ? Ads.Count : 5;
+            return Ads.GetRange(0, end);
         }
-        private List<NannyOffer> getNannyOffers()
+        private List<WalkerAd> getWalkerAds()
         {
-            List<NannyOffer> offers = (List<NannyOffer>)OfferRepository.GetAllNannyOffers();
-            if (offers == null || offers.Count == 0)
+            List<WalkerAd> Ads = (List<WalkerAd>)AdRepository.GetAllWalkerAds();
+            if (Ads == null || Ads.Count == 0)
             {
-                return new List<NannyOffer>();
+                return new List<WalkerAd>();
             }
-            int end = offers.Count < 5 ? offers.Count : 5;
-            return offers.GetRange(0, end);
+            int end = Ads.Count < 5 ? Ads.Count : 5;
+            return Ads.GetRange(0, end);
         }
 
-        public void ApplyToOffer(int OfferId)
+        public void ApplyToAd(int AdId)
         {
-            OfferController OfferController = new OfferController();
-            OfferController.ApplyToOffer(CurrentUser, OfferId, OfferRepository, UserRepository, CooperationRepository);
+            AdController AdController = new AdController();
+            AdController.ApplyToAd(CurrentUser, AdId, AdRepository, UserRepository, CooperationRepository);
         }
 
         public void ShowLoginForm(IMainView MainView)
@@ -172,129 +156,103 @@ namespace WalkMyDog.Controllers
         }
 
 
-        public void ShowNannyForm(Form LoginView)
+        public void ShowWalkerForm(Form LoginView)
         {
-            NannyController NannyController = new NannyController();
-            var CreateNannyForm = WindowFormsFactory.CreateNannyView(this);
-            CreateNannyForm.AdjustCreateView();
-            NannyController.ShowNannyForm(CreateNannyForm);
+            WalkerController WalkerController = new WalkerController();
+            var CreateWalkerForm = WindowFormsFactory.CreateWalkerView(this);
+            CreateWalkerForm.AdjustCreateView();
+            WalkerController.ShowWalkerForm(CreateWalkerForm);
 
             LoginView.Close();
             //nanycon umjesto
         }
-        public void CreateNanny(INannyView NannyForm)
+        public void CreateWalker(IWalkerView WalkerForm)
         {
-            NannyController NannyController = new NannyController();
-            User User = NannyController.CreateNanny(NannyForm, UserRepository);
+            WalkerController WalkerController = new WalkerController();
+            User User = WalkerController.CreateWalker(WalkerForm, UserRepository);
             if (User == null)
             {
                 return;
             }
-            var frm = (Form)NannyForm;
+            var frm = (Form)WalkerForm;
             frm.Close();
             CurrentUser = User;
             ShowMainForm();
         }
 
-        public void CreateOffer(IOfferView OfferForm)
+        public void CreateAd(IAdView AdForm)
         {
-            OfferController OfferController = new OfferController();
-            OfferController.CreateOffer(OfferForm, UserRepository, CurrentUser);
+            AdController AdController = new AdController();
+            AdController.CreateAd(AdForm, UserRepository, CurrentUser);
         }
-        public void ShowCooperation(int Id)
-        {
-            CooperationController CooperationController = new CooperationController();
-            ICooperationView CooperationView = WindowFormsFactory.CreateCooperationView(this);
-            CooperationController.ShowCooperation(CooperationView, Id, CooperationRepository, CurrentUser);
-        }
-        public void UpdateCooperation(ICooperationView CooperationView)
-        {
-            CooperationController CooperationController = new CooperationController();
-            CooperationController.UpdateCooperation(CooperationView, UserRepository, CurrentUser);
-        }
-
-        public void ShowReview(int CooperationId)
-        {
-            IReviewView ReviewView = WindowFormsFactory.CreateReviewView(this);
-            ReviewController ReviewController = new ReviewController();
-            ReviewController.ShowReview(ReviewView, CooperationId, CurrentUser);
-        }
-
-        public void SaveReview(IReviewView ReviewView)
-        {
-            ReviewController ReviewController = new ReviewController();
-            ReviewController.SaveReview(ReviewView, CurrentUser, UserRepository);
-        }
-
-
-        public void ShowOfferForm(int Id, IMainView MainView)
+        public void ShowAdForm(int Id, IMainView MainView)
         {
             if (CurrentUser == null)
             {
-                MessageBox.Show("Logon or create account to view offer details");
+                MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
-            OfferForm OfferForm = (OfferForm)WindowFormsFactory.CreateOfferView(this);
+            AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
 
-            NannyOffer no = OfferRepository.GetNannyOffer(Id);
+            WalkerAd no = AdRepository.GetWalkerAd(Id);
             if (no != null)
             {
-                if (CurrentUser.UserType == UserType.NANNY)
+                if (CurrentUser.UserType == UserType.Walker)
                 {
-                    OfferForm.AdjustApplyNoView();
+                    AdForm.AdjustApplyNoView();
                 }
                 else
                 {
-                    OfferForm.AdjustApplyYesView();
+                    AdForm.AdjustApplyYesView();
                 }
             }
-            ParentOffer po = OfferRepository.GetParentOffer(Id);
+            OwnerAd po = AdRepository.GetOwnerAd(Id);
             if (po != null)
             {
-                if (CurrentUser.UserType == UserType.PARENT)
+                if (CurrentUser.UserType == UserType.Owner)
                 {
-                    OfferForm.AdjustApplyNoView();
+                    AdForm.AdjustApplyNoView();
                 }
                 else
                 {
-                    OfferForm.AdjustApplyYesView();
+                    AdForm.AdjustApplyYesView();
                 }
             }
             if (CurrentUser == null)
             {
-                MessageBox.Show("Logon or create account to view offer details");
+                MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
-            OfferController OfferController = new OfferController();
-            //OfferForm OfferForm = (OfferForm)WindowFormsFactory.CreateOfferView(this);
-            OfferController.ShowOfferForm(OfferForm, Id, UserRepository, OfferRepository, CurrentUser);
+            AdController AdController = new AdController();
+            //AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
+            AdController.ShowAdForm(AdForm, Id, UserRepository, AdRepository, CurrentUser);
         }
-        public void ShowOfferForm()
+        public void ShowAdForm()
         {
-            OfferController OfferController = new OfferController();
-            OfferForm OfferForm = (OfferForm)WindowFormsFactory.CreateOfferView(this);
-            OfferController.ShowOfferForm(OfferForm);
+            AdController AdController = new AdController();
+            AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
+            AdController.ShowAdForm(AdForm);
         }
 
-        public void ShowParentForm(Form LoginView)
+        public void ShowOwnerForm(Form LoginView)
         {
-            ParentController ParentController = new ParentController();
-            ParentForm ParentForm = (ParentForm)WindowFormsFactory.CreateParentView(this);
-            ParentForm.AdjustCreateView();
-            ParentController.ShowParentForm(ParentForm);
+            OwnerController OwnerController = new OwnerController();
+            OwnerForm OwnerForm = (OwnerForm)WindowFormsFactory.CreateOwnerView(this);
+            OwnerForm.AdjustCreateView();
+            OwnerController.ShowOwnerForm(OwnerForm);
             LoginView.Close();
 
         }
 
-        public void CreateParent(IParentView ParentForm)
+        public void CreateOwner(IOwnerView OwnerForm)
         {
-            ParentController ParentController = new ParentController();
-            User User = ParentController.CreateParent(ParentForm, UserRepository);
+            OwnerController OwnerController = new OwnerController();
+            User User = OwnerController.CreateOwner(OwnerForm, UserRepository);
             if (User == null)
             {
                 return;
             }
-            var frm = (Form)ParentForm;
+            var frm = (Form)OwnerForm;
             frm.Close();
             CurrentUser = User;
             ShowMainForm();
@@ -318,9 +276,9 @@ namespace WalkMyDog.Controllers
             MainView.ShowLoginButton();
         }
 
-        public void ShowCreateOfferForm()
+        public void ShowCreateAdForm()
         {
-            OfferController OfferController = new OfferController();
+            AdController AdController = new AdController();
 
         }
     }
