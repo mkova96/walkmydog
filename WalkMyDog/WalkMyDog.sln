@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{E5020F93-E1D1-4E53-B8D9-31335A32A374}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.BaseLib", "WalkMyDog.BaseLib\WalkMyDog.BaseLib.csproj", "{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.PresentationLayer", "WalkMyDog.PresentationLayer\WalkMyDog.PresentationLayer.csproj", "{7DE7656F-FAD3-4420-8F7B-B11D5E275243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.Controllers", "WalkMyDog.Controllers\WalkMyDog.Controllers.csproj", "{A0E37122-22A7-430A-8381-B55B3A9627E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.Model", "WalkMyDog.Model\WalkMyDog.Model.csproj", "{2E14D034-3D21-477C-88E4-41A0744CB733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E5020F93-E1D1-4E53-B8D9-31335A32A374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5020F93-E1D1-4E53-B8D9-31335A32A374}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5020F93-E1D1-4E53-B8D9-31335A32A374}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5020F93-E1D1-4E53-B8D9-31335A32A374}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE7656F-FAD3-4420-8F7B-B11D5E275243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE7656F-FAD3-4420-8F7B-B11D5E275243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE7656F-FAD3-4420-8F7B-B11D5E275243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE7656F-FAD3-4420-8F7B-B11D5E275243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E37122-22A7-430A-8381-B55B3A9627E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E37122-22A7-430A-8381-B55B3A9627E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E37122-22A7-430A-8381-B55B3A9627E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E37122-22A7-430A-8381-B55B3A9627E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E14D034-3D21-477C-88E4-41A0744CB733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E14D034-3D21-477C-88E4-41A0744CB733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E14D034-3D21-477C-88E4-41A0744CB733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E14D034-3D21-477C-88E4-41A0744CB733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

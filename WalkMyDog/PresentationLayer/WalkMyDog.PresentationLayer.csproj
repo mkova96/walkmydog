@@ -7,8 +7,8 @@
     <ProjectGuid>{E5020F93-E1D1-4E53-B8D9-31335A32A374}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PresentationLayer</RootNamespace>
-    <AssemblyName>PresentationLayer</AssemblyName>
+    <RootNamespace>WalkMyDog.PresentationLayer</RootNamespace>
+    <AssemblyName>WalkMyDog.PresentationLayer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -107,6 +107,12 @@
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WalkMyDog.BaseLib\WalkMyDog.BaseLib.csproj">
+      <Project>{39eddb27-c3af-497f-b3ab-31032bc60da9}</Project>
+      <Name>WalkMyDog.BaseLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

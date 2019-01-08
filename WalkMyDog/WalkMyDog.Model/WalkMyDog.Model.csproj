@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{39EDDB27-C3AF-497F-B3AB-31032BC60DA9}</ProjectGuid>
+    <ProjectGuid>{2E14D034-3D21-477C-88E4-41A0744CB733}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WalkMyDog.BaseLib</RootNamespace>
-    <AssemblyName>WalkMyDog.BaseLib</AssemblyName>
+    <RootNamespace>WalkMyDog.Model</RootNamespace>
+    <AssemblyName>WalkMyDog.Model</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,18 +32,25 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ILoginView.cs" />
-    <Compile Include="IMainFormController.cs" />
-    <Compile Include="IMainView.cs" />
-    <Compile Include="IWindowFormsFactory.cs" />
+    <Compile Include="Ad.cs" />
+    <Compile Include="Admin.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Factories\UserFactory.cs" />
+    <Compile Include="Owner.cs" />
+    <Compile Include="OwnerAd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IAdRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Walker.cs" />
+    <Compile Include="WalkerAd.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

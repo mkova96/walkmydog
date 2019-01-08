@@ -11,7 +11,7 @@ namespace PresentationLayer
 {
     public partial class LoginForm : Form
     {
-        public LoginForm()
+        public LoginForm(WalkMyDog.BaseLib.IMainFormController mainFormController)
         {
             InitializeComponent();
         }
