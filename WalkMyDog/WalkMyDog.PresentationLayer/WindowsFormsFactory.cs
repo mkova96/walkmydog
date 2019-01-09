@@ -29,15 +29,12 @@ namespace WalkMyDog.PresentationLayer
 
         public IOwnerView CreateOwnerView(IMainFormController MainFormController)
         {
-            return null;
-            //return new OwnerForm(MainFormController);
+            return new OwnerForm(MainFormController);
         }
 
         public IAdView CreateAdView(IMainFormController MainFormController)
         {
-            return null;
-
-            //return new AdForm(MainFormController);
+            return new AdForm(MainFormController);
         }
 
     }
