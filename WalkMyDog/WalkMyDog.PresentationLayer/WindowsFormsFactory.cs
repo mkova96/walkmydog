@@ -14,52 +14,31 @@ namespace WalkMyDog.PresentationLayer
 
             return newFrm;
         }
-        /*public IMainView CreateMainView(IMainFormController MainFormController)
+        public IMainView CreateMainView(IMainFormController MainFormController)
         {
             var newFrm = new MainForm(MainFormController);
 
             return newFrm;
         }
-        public IReviewsView CreateReviewsView(IMainFormController MainFormController)
-        {
-            var newFrm = new ReviewsForm(MainFormController);
+        
 
-            return newFrm;
-        }
-        public IReviewView CreateReviewView(IMainFormController MainFormController)
+        public IWalkerView CreateWalkerView(IMainFormController MainFormController)
         {
-            var newFrm = new ReviewForm(MainFormController);
-
-            return newFrm;
-        }
-        public ICooperationView CreateCooperationView(IMainFormController MainFormController)
-        {
-            var newFrm = new CooperationForm(MainFormController);
-
-            return newFrm;
-        }
-        public ICooperationsView CreateCooperationsView(IMainFormController MainFormController)
-        {
-            var newFrm = new CooperationsForm(MainFormController);
-
-            return newFrm;
+            return new WalkerForm(MainFormController);
         }
 
-        public INannyView CreateNannyView(IMainFormController MainFormController)
+        public IOwnerView CreateOwnerView(IMainFormController MainFormController)
         {
-            return new NannyForm(MainFormController);
+            return null;
+            //return new OwnerForm(MainFormController);
         }
 
-        public IParentView CreateParentView(IMainFormController MainFormController)
+        public IAdView CreateAdView(IMainFormController MainFormController)
         {
-            return new ParentForm(MainFormController);
-        }
+            return null;
 
-        //public IOfferView CreateParentView(IMainFormController MainFormController)
-        public IOfferView CreateOfferView(IMainFormController MainFormController)
-        {
-            return new OfferForm(MainFormController);
-        }*/
+            //return new AdForm(MainFormController);
+        }
 
     }
 }

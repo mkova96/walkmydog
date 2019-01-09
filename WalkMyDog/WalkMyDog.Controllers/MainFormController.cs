@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using WalkMyDog.BaseLib;
 using WalkMyDog.Model;
 using WalkMyDog.Model.Repositories;
+using WalkMyDog.PresentationLayer;
 
 namespace WalkMyDog.Controllers
 {
@@ -137,10 +138,10 @@ namespace WalkMyDog.Controllers
             return Ads.GetRange(0, end);
         }
 
-        /*public void ApplyToAd(int AdId)
+        /*public void AcceptAd(int AdId)
         {
             AdController AdController = new AdController();
-            AdController.ApplyToAd(CurrentUser, AdId, AdRepository, UserRepository, CooperationRepository);
+            AdController.AcceptAd(CurrentUser, AdId, AdRepository, UserRepository);
         }*/
 
         public void ShowLoginForm(IMainView MainView)
@@ -281,6 +282,11 @@ namespace WalkMyDog.Controllers
         {
             AdController AdController = new AdController();
 
+        }
+
+        public void AcceptAd(int Id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

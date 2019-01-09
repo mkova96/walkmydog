@@ -1,0 +1,17 @@
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.csprojAssemblyReference.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.LoginForm.resources
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.MainForm.resources
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.WalkerForm.resources
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.csproj.GenerateResource.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.PresentationLayer.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.PresentationLayer.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.BaseLib.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.BaseLib.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.csproj.CopyComplete
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.AdForm.resources
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.OwnerForm.resources

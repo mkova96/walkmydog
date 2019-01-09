@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{48B73BEC-92B9-4BE6-BA83-0BE48F6B016E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WalkMyDog.AppStarter</RootNamespace>
     <AssemblyName>WalkMyDog.AppStarter</AssemblyName>
@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +53,10 @@
     <ProjectReference Include="..\WalkMyDog.Controllers\WalkMyDog.Controllers.csproj">
       <Project>{a0e37122-22a7-430a-8381-b55b3a9627e0}</Project>
       <Name>WalkMyDog.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WalkMyDog.MemoryBasedDAL\WalkMyDog.MemoryBasedDAL.csproj">
+      <Project>{6cbb441b-d04c-4521-99ca-0725475e1b50}</Project>
+      <Name>WalkMyDog.MemoryBasedDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\WalkMyDog.Model\WalkMyDog.Model.csproj">
       <Project>{2e14d034-3d21-477c-88e4-41a0744cb733}</Project>

@@ -22,11 +22,9 @@ namespace WalkMyDog.BaseLib
         void ShowAdForm(int Id, IMainView MinView);
         void ShowOwner(IAdView AdView);
         void Logout(IMainView MainView);
-        void ApplyToAd(int Id);
         void InitializeLists(IMainView MainView);
 
-
-
+        void AcceptAd(int Id);
 
     }
 }

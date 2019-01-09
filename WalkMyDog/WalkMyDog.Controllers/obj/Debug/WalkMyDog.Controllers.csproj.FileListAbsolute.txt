@@ -1,0 +1,13 @@
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csprojAssemblyReference.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Controllers.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Controllers.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.BaseLib.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.PresentationLayer.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.BaseLib.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\bin\Debug\WalkMyDog.PresentationLayer.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csproj.CopyComplete
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.pdb

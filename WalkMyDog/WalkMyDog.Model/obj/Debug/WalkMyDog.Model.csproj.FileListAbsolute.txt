@@ -1,0 +1,6 @@
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.csprojAssemblyReference.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.pdb

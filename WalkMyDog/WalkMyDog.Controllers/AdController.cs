@@ -25,10 +25,10 @@ namespace WalkMyDog.Controllers
             AdView.Title = Ad.Title;
             AdView.Hours = Ad.Hours;
             AdView.DogsNumber  = Ad.DogsNumber;
-            AdView.Date = Ad.Date;
+            //AdView.Date = Ad.Date;
             AdView.Description = Ad.Description;
             AdView.AdId = Ad.Id;
-            AdView.AdStatus = Ad.AdStatus;
+            //AdView.AdStatus = Ad.AdStatus;
 
             var form = (Form)AdView;
             form.Show();
@@ -87,7 +87,7 @@ namespace WalkMyDog.Controllers
             form.Hide();
         }
 
-        /*public void ApplyToAd(User CurrentUser, int AdId, IAdRepository AdRepository,
+        /*public void AcceptAd(User CurrentUser, int AdId, IAdRepository AdRepository,
             IUserRepository UserRepository, ICooperationRepository CoorporationRepository)
         {
             Ad Ad = GetAd(AdId, AdRepository);

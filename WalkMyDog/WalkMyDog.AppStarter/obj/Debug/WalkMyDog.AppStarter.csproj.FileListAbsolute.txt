@@ -1,0 +1,2 @@
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.AppStarter\obj\Debug\WalkMyDog.AppStarter.csprojAssemblyReference.cache
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.AppStarter\obj\Debug\WalkMyDog.AppStarter.csproj.CoreCompileInputs.cache
