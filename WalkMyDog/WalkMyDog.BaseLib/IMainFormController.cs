@@ -26,5 +26,7 @@ namespace WalkMyDog.BaseLib
 
         void AcceptAd(int Id);
 
+
+
     }
 }

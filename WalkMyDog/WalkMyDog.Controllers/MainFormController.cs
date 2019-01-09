@@ -166,7 +166,6 @@ namespace WalkMyDog.Controllers
             WalkerController.ShowWalkerForm(CreateWalkerForm);
 
             LoginView.Close();
-            //nanycon umjesto
         }
         public void CreateWalker(IWalkerView WalkerForm)
         {
@@ -267,6 +266,7 @@ namespace WalkMyDog.Controllers
             User User = AccountController.Login(UserRepository, LoginView, this);
 
             CurrentUser = User;
+
             ShowMainForm();
         }
 
@@ -288,5 +288,7 @@ namespace WalkMyDog.Controllers
         {
             throw new NotImplementedException();
         }
+
+
     }
 }
