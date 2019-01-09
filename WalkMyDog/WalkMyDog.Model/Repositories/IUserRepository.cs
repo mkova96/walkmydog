@@ -19,7 +19,7 @@ namespace WalkMyDog.Model.Repositories
         Admin GetAdmin(string Username, string Password);
         Walker GetWalker(string Username, string Password);
         Owner GetOwner(string Username, string Password);
-        IList<Walker> GetAllNannies();
+        IList<Walker> GetAllWalkers();
         IList<Owner> GetAllOwners();
         bool UpdateUser(User User);
 

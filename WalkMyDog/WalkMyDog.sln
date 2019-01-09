@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.Model", "WalkMyDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.AppStarter", "WalkMyDog.AppStarter\WalkMyDog.AppStarter.csproj", "{48B73BEC-92B9-4BE6-BA83-0BE48F6B016E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalkMyDog.MemoryBasedDAL", "WalkMyDog.MemoryBasedDAL\WalkMyDog.MemoryBasedDAL.csproj", "{6CBB441B-D04C-4521-99CA-0725475E1B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{48B73BEC-92B9-4BE6-BA83-0BE48F6B016E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48B73BEC-92B9-4BE6-BA83-0BE48F6B016E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48B73BEC-92B9-4BE6-BA83-0BE48F6B016E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBB441B-D04C-4521-99CA-0725475E1B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBB441B-D04C-4521-99CA-0725475E1B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBB441B-D04C-4521-99CA-0725475E1B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBB441B-D04C-4521-99CA-0725475E1B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
