@@ -21,3 +21,15 @@ C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyD
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.csproj.CopyComplete
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.dll
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.MemoryBasedDAL.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.BaseLib.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.Model.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.dll.config

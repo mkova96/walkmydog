@@ -1,0 +1,28 @@
+
+[01-Jan-01 12:00:00 AM] Could not create the driver from NHibernate.Driver.SQLite20Driver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. 
+NHibernate
+    at NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   at NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   at NHibernate.Cfg.Configuration.BuildSettings()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at WalkMyDog.MemoryBasedDAL.NHibernateService.OpenSessionFactory() in C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\NHibernateService.cs:line 53
+[01-Jan-01 12:00:00 AM] Could not create the driver from NHibernate.Driver.SQLite20Driver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. 
+NHibernate
+    at NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   at NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   at NHibernate.Cfg.Configuration.BuildSettings()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at WalkMyDog.MemoryBasedDAL.NHibernateService.OpenSessionFactory() in C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\NHibernateService.cs:line 53
+[01-Jan-01 12:00:00 AM] Could not create the driver from NHibernate.Driver.SQLite20Driver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. 
+NHibernate
+    at NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   at NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   at NHibernate.Cfg.Configuration.BuildSettings()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at WalkMyDog.MemoryBasedDAL.NHibernateService.OpenSessionFactory() in C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\NHibernateService.cs:line 53

@@ -15,3 +15,5 @@ C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\Walk
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.pdb
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.AdForm.resources
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\obj\Debug\WalkMyDog.PresentationLayer.OwnerForm.resources
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.BaseLib.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.PresentationLayer\bin\Debug\WalkMyDog.Model.dll.config

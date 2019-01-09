@@ -4,3 +4,14 @@ C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.csproj.CoreCompileInputs.cache
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.dll
 C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\WalkMyDog.Model.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\EntityFramework.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\System.Data.SQLite.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\EntityFramework.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\System.Data.SQLite.xml
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.Model\obj\Debug\WalkMyDog.Model.csproj.CopyComplete
