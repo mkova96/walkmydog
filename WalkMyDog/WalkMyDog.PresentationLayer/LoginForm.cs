@@ -32,20 +32,20 @@ namespace WalkMyDog.PresentationLayer
             InitializeComponent();
         }
 
-        public void LogIn(object sender, EventArgs e)
+        public void Login(object sender, EventArgs e)
         {
 
             controller.LoginUser(this);
         }
-        /*public void CreateNanny(object sender, EventArgs e)
+        public void CreateWalker(object sender, EventArgs e)
         {
-            controller.ShowNannyForm(this);
+            controller.ShowWalkerForm(this);
             this.Hide();
         }
-        public void CreateParent(object sender, EventArgs e)
+        public void CreateOwner(object sender, EventArgs e)
         {
-            controller.ShowParentForm(this);
-        }*/
+            controller.ShowOwnerForm(this);
+        }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {

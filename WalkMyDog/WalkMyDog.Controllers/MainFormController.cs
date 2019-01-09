@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 using WalkMyDog.BaseLib;
 using WalkMyDog.Model;
 using WalkMyDog.Model.Repositories;
@@ -136,11 +137,11 @@ namespace WalkMyDog.Controllers
             return Ads.GetRange(0, end);
         }
 
-        public void ApplyToAd(int AdId)
+        /*public void ApplyToAd(int AdId)
         {
             AdController AdController = new AdController();
             AdController.ApplyToAd(CurrentUser, AdId, AdRepository, UserRepository, CooperationRepository);
-        }
+        }*/
 
         public void ShowLoginForm(IMainView MainView)
         {
@@ -197,7 +198,7 @@ namespace WalkMyDog.Controllers
             WalkerAd no = AdRepository.GetWalkerAd(Id);
             if (no != null)
             {
-                if (CurrentUser.UserType == UserType.Walker)
+                if (CurrentUser.UserType == UserType.WALKER)
                 {
                     AdForm.AdjustApplyNoView();
                 }
@@ -209,7 +210,7 @@ namespace WalkMyDog.Controllers
             OwnerAd po = AdRepository.GetOwnerAd(Id);
             if (po != null)
             {
-                if (CurrentUser.UserType == UserType.Owner)
+                if (CurrentUser.UserType == UserType.OWNER)
                 {
                     AdForm.AdjustApplyNoView();
                 }
