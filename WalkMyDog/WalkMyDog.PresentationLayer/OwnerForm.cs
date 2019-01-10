@@ -12,16 +12,16 @@ namespace WalkMyDog.PresentationLayer
 {
     public partial class OwnerForm : Form, IOwnerView
     {
-        IMainFormController MainController;
-        public OwnerForm(IMainFormController MainController)
+        IMainFormController MainFormController;
+        public OwnerForm(IMainFormController MainFormController)
         {
-            this.MainController = MainController;
+            this.MainFormController = MainFormController;
             InitializeComponent();
         }
 
         private void CreateOwner(object sender, EventArgs e)
         {
-            MainController.CreateOwner(this);
+            MainFormController.CreateOwner(this);
         }
 
         public string Username
@@ -48,7 +48,7 @@ namespace WalkMyDog.PresentationLayer
                 PasswordTextBox.Text = value;
             }
         }
-        public string Name
+        public string OwnerName
         {
             get
             {
@@ -133,6 +133,16 @@ namespace WalkMyDog.PresentationLayer
             UpdateOwnerButton.Hide();
             CreateOwnerButton.Hide();
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateOwner(object sender, EventArgs e)
+        {
+            MainFormController.UpdateOwner(this);
         }
     }
 }

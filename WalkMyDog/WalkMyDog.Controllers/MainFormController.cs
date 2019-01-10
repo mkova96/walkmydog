@@ -312,5 +312,17 @@ namespace WalkMyDog.Controllers
         }
 
 
+        public void UpdateWalker(IWalkerView WalkerView)
+        {
+            WalkerController WalkerController = new WalkerController();
+            WalkerController.UpdateWalker(WalkerView, UserRepository, (Walker)CurrentUser);
+        }
+        public void UpdateOwner(IOwnerView OwnerView)
+        {
+            OwnerController OwnerController = new OwnerController();
+            OwnerController.UpdateOwner(OwnerView, UserRepository,CurrentUser);
+        }
+
+
     }
 }

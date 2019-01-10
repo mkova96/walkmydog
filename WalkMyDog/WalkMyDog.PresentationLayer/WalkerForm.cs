@@ -146,7 +146,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 var checkedButton = experiencePanel.Controls.OfType<RadioButton>()
                                                      .FirstOrDefault(r => r.Checked);
-                if (checkedButton.Name.Equals("Yes"))
+                if (checkedButton.Name.Equals("ExperienceYes"))
                 {
                     return true;
                 }
@@ -174,7 +174,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 var checkedButton = dogsPanel.Controls.OfType<RadioButton>()
                                                      .FirstOrDefault(r => r.Checked);
-                if (checkedButton.Name.Equals("Yes"))
+                if (checkedButton.Name.Equals("DogsYes")) ///PAZIII
                 {
                     return true;
                 }
@@ -230,6 +230,21 @@ namespace WalkMyDog.PresentationLayer
         public void HideViewReviewsButton()
         {
             ReviewsButton.Hide();
+        }
+
+        private void ageNumeric_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateWalker(object sender, EventArgs e)
+        {
+            MainFormController.UpdateWalker(this);
         }
     }
 }

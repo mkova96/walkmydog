@@ -22,6 +22,8 @@ namespace WalkMyDog.Model.Repositories
         IList<Walker> GetAllWalkers();
         IList<Owner> GetAllOwners();
         bool UpdateUser(User User);
+        bool UpdateWalker(Walker User);
+
 
 
 

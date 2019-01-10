@@ -22,7 +22,7 @@ namespace WalkMyDog.Controllers
         {
             OwnerView.Username = Owner.Username;
             OwnerView.Password = Owner.Password;
-            OwnerView.Name = Owner.Name;
+            OwnerView.OwnerName = Owner.Name;
             OwnerView.Surname = Owner.Surname;
             OwnerView.PhoneNumber = Owner.PhoneNumber;
             OwnerView.Age = Owner.Age;
@@ -37,7 +37,7 @@ namespace WalkMyDog.Controllers
         {
             string Username = OwnerView.Username;
             string Password = OwnerView.Password;
-            string Name = OwnerView.Name;
+            string Name = OwnerView.OwnerName;
             string Surname = OwnerView.Surname;
             string PhoneNumber = OwnerView.PhoneNumber;
             int Age = OwnerView.Age;
@@ -65,6 +65,26 @@ namespace WalkMyDog.Controllers
                 return null;
             }
             return Owner;
+        }
+
+        public void UpdateOwner(IOwnerView OwnerView,
+            IUserRepository UserRepository, User User)
+        {
+
+            User.Name = OwnerView.OwnerName;
+            User.Address = OwnerView.Address;
+            User.Age = OwnerView.Age;
+            User.City = OwnerView.City;
+            User.Password = OwnerView.Password;
+            User.PhoneNumber = OwnerView.PhoneNumber;
+            User.Surname = OwnerView.Surname;
+            User.Username = OwnerView.Username;
+
+            UserRepository.UpdateUser(User);
+
+
+            var frm = (Form)OwnerView;
+            frm.Close();
         }
     }
 }

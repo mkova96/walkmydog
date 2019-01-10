@@ -81,5 +81,32 @@ namespace WalkMyDog.Controllers
 
         }
 
+        public void UpdateWalker(IWalkerView WalkerView,
+            IUserRepository UserRepository, Walker User)
+        {
+
+            User.Name = WalkerView.WalkerName;
+            User.Address = WalkerView.Address;
+            User.Age = WalkerView.Age;
+            User.City = WalkerView.City;
+            User.Password = WalkerView.Password;
+            User.PhoneNumber = WalkerView.PhoneNumber;
+            User.Surname = WalkerView.Surname;
+            User.Username = WalkerView.Username;
+
+            User.Dogs = WalkerView.Dogs;
+            User.Experience = WalkerView.Experience;
+
+
+
+            //Walker.Status = WalkerView.Status;
+
+            UserRepository.UpdateWalker(User);
+
+
+            var frm = (Form)WalkerView;
+            frm.Close();
+        }
+
     }
 }
