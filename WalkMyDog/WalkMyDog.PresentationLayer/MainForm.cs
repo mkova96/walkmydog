@@ -60,7 +60,7 @@ namespace WalkMyDog.PresentationLayer
 
         public void ShowAdForm(object sender, EventArgs e)
         {
-            MainController.ShowAdForm();
+            MainController.ShowAdForm(this);
         }
         public void Close(object sender, EventArgs e)
         {

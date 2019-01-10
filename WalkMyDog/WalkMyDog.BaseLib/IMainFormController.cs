@@ -16,7 +16,7 @@ namespace WalkMyDog.BaseLib
         void ShowMainForm();
         void ShowOwnerForm(Form LoginView);
         void CreateOwner(IOwnerView OwnerView);
-        void ShowAdForm();
+        void ShowAdForm(IMainView MainView); //MJENJANO
         void ShowMyProfile();
         void CreateAd(IAdView AdView);
         void ShowAdForm(int Id, IMainView MinView);

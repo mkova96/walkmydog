@@ -38,11 +38,15 @@ namespace WalkMyDog.Controllers
             mainForm.HideLoginButton();
             mainForm.SetWelcomeLabel("Welcome " + CurrentUser.Name);
             mainForm.EnableMenu();
-            mainForm.WalkerAds = getWalkerAds();
-            mainForm.WalkerAds = getWalkerAds();
+
+            //mainForm.WalkerAds = getWalkerAds();
+            //mainForm.WalkerAds = getWalkerAds();
+
+            //InitializeLists(mainForm);
 
             var form = (Form)mainForm;
             form.Show();
+
         }
         public void ShowOwner(IAdView AdView)
         {
@@ -124,8 +128,8 @@ namespace WalkMyDog.Controllers
             {
                 return new List<OwnerAd>();
             }
-            int end = Ads.Count < 5 ? Ads.Count : 5;
-            return Ads.GetRange(0, end);
+            //int end = Ads.Count < 5 ? Ads.Count : 5;
+            return Ads.GetRange(0, Ads.Count);
         }
         private List<WalkerAd> getWalkerAds()
         {
@@ -134,8 +138,8 @@ namespace WalkMyDog.Controllers
             {
                 return new List<WalkerAd>();
             }
-            int end = Ads.Count < 5 ? Ads.Count : 5;
-            return Ads.GetRange(0, end);
+            //int end = Ads.Count < 5 ? Ads.Count : 5;
+            return Ads.GetRange(0,Ads.Count);
         }
 
         /*public void AcceptAd(int AdId)
@@ -185,14 +189,24 @@ namespace WalkMyDog.Controllers
         {
             AdController AdController = new AdController();
             AdController.CreateAd(AdForm, UserRepository, CurrentUser);
+
+            ShowMainForm();
         }
         public void ShowAdForm(int Id, IMainView MainView)
         {
+
+
             if (CurrentUser == null)
             {
                 MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
+
+            ShowMainForm();
+
+            var frm = (Form)MainView;
+            frm.Hide();
+
             AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
 
             WalkerAd no = AdRepository.GetWalkerAd(Id);
@@ -227,9 +241,17 @@ namespace WalkMyDog.Controllers
             AdController AdController = new AdController();
             //AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
             AdController.ShowAdForm(AdForm, Id, UserRepository, AdRepository, CurrentUser);
+
+
+            
         }
-        public void ShowAdForm()
+        public void ShowAdForm(IMainView MainView) ///MJENJAM
         {
+            ShowMainForm();
+
+            var frm = (Form)MainView;
+            frm.Hide();
+
             AdController AdController = new AdController();
             AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
             AdController.ShowAdForm(AdForm);
