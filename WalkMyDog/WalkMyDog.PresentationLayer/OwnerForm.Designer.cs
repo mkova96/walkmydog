@@ -141,6 +141,7 @@
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(458, 212);
             this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(146, 22);
             this.PasswordTextBox.TabIndex = 10;
             // 
@@ -190,7 +191,6 @@
             this.CreateOwnerButton.Text = "Registriraj se";
             this.CreateOwnerButton.UseVisualStyleBackColor = true;
             this.CreateOwnerButton.Click += new System.EventHandler(this.CreateOwner);
-
             // 
             // UpdateOwnerButton
             // 
@@ -203,7 +203,6 @@
             this.UpdateOwnerButton.Text = "Uredi profil";
             this.UpdateOwnerButton.UseVisualStyleBackColor = true;
             this.UpdateOwnerButton.Click += new System.EventHandler(this.UpdateOwner);
-
             // 
             // label14
             // 

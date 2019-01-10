@@ -126,12 +126,14 @@ namespace WalkMyDog.PresentationLayer
         public void AdjustEditView()
         {
             CreateOwnerButton.Hide();
+
         }
 
         public void AdjustOuterView()
         {
             UpdateOwnerButton.Hide();
             CreateOwnerButton.Hide();
+            PasswordTextBox.Hide();
 
         }
 

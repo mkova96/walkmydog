@@ -20,7 +20,6 @@ namespace WalkMyDog.PresentationLayer
         public void AdjustCreateView()
         {
             UpdateAccountButton.Hide();
-            //ReviewsButton.Hide();
         }
         public void AdjustEditView()
         {
@@ -29,8 +28,9 @@ namespace WalkMyDog.PresentationLayer
         public void AdjustOuterView()
         {
             UpdateAccountButton.Hide();
-            //ReviewsButton.Hide();
             CreateAccountButton.Hide();
+            passwordTextbox.Hide();
+
 
         }
 

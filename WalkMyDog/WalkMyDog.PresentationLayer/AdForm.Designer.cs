@@ -43,12 +43,15 @@
             this.DescriptionTextBox = new System.Windows.Forms.TextBox();
             this.priceNumeric = new System.Windows.Forms.NumericUpDown();
             this.adId = new System.Windows.Forms.Button();
-            this.AcceptAdButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.DeleteAdButton = new System.Windows.Forms.Button();
+            this.StatusPanel = new System.Windows.Forms.Panel();
+            this.statusAccepted = new System.Windows.Forms.RadioButton();
+            this.statusActive = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
+            this.StatusPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label13
@@ -58,9 +61,9 @@
             this.label13.Location = new System.Drawing.Point(472, 317);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 17);
+            this.label13.Size = new System.Drawing.Size(94, 17);
             this.label13.TabIndex = 28;
-            this.label13.Text = "Oglas je:";
+            this.label13.Text = "Status oglasa";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -216,18 +219,6 @@
             this.adId.UseVisualStyleBackColor = true;
             this.adId.Visible = false;
             // 
-            // AcceptAdButton
-            // 
-            this.AcceptAdButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.AcceptAdButton.Location = new System.Drawing.Point(475, 348);
-            this.AcceptAdButton.Margin = new System.Windows.Forms.Padding(4);
-            this.AcceptAdButton.Name = "AcceptAdButton";
-            this.AcceptAdButton.Size = new System.Drawing.Size(208, 38);
-            this.AcceptAdButton.TabIndex = 35;
-            this.AcceptAdButton.Text = "Prihvati oglas";
-            this.AcceptAdButton.UseVisualStyleBackColor = true;
-            this.AcceptAdButton.Click += new System.EventHandler(this.AcceptAd);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -248,11 +239,47 @@
             this.DeleteAdButton.UseVisualStyleBackColor = true;
             this.DeleteAdButton.Click += new System.EventHandler(this.DeleteAd);
             // 
+            // StatusPanel
+            // 
+            this.StatusPanel.Controls.Add(this.statusAccepted);
+            this.StatusPanel.Controls.Add(this.statusActive);
+            this.StatusPanel.Location = new System.Drawing.Point(475, 338);
+            this.StatusPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.StatusPanel.Name = "StatusPanel";
+            this.StatusPanel.Size = new System.Drawing.Size(191, 34);
+            this.StatusPanel.TabIndex = 39;
+            // 
+            // statusAccepted
+            // 
+            this.statusAccepted.AutoSize = true;
+            this.statusAccepted.Location = new System.Drawing.Point(87, 8);
+            this.statusAccepted.Margin = new System.Windows.Forms.Padding(4);
+            this.statusAccepted.Name = "statusAccepted";
+            this.statusAccepted.Size = new System.Drawing.Size(92, 21);
+            this.statusAccepted.TabIndex = 11;
+            this.statusAccepted.TabStop = true;
+            this.statusAccepted.Text = "Prihvacen";
+            this.statusAccepted.UseVisualStyleBackColor = true;
+            // 
+            // statusActive
+            // 
+            this.statusActive.AutoSize = true;
+            this.statusActive.Checked = true;
+            this.statusActive.Location = new System.Drawing.Point(4, 8);
+            this.statusActive.Margin = new System.Windows.Forms.Padding(4);
+            this.statusActive.Name = "statusActive";
+            this.statusActive.Size = new System.Drawing.Size(75, 21);
+            this.statusActive.TabIndex = 12;
+            this.statusActive.TabStop = true;
+            this.statusActive.Text = "Aktivan";
+            this.statusActive.UseVisualStyleBackColor = true;
+            // 
             // AdForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 555);
+            this.Controls.Add(this.StatusPanel);
             this.Controls.Add(this.DeleteAdButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label13);
@@ -270,13 +297,14 @@
             this.Controls.Add(this.DescriptionTextBox);
             this.Controls.Add(this.priceNumeric);
             this.Controls.Add(this.adId);
-            this.Controls.Add(this.AcceptAdButton);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdForm";
             this.Text = "Oglas";
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
+            this.StatusPanel.ResumeLayout(false);
+            this.StatusPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,8 +327,10 @@
         private System.Windows.Forms.TextBox DescriptionTextBox;
         private System.Windows.Forms.NumericUpDown priceNumeric;
         private System.Windows.Forms.Button adId;
-        private System.Windows.Forms.Button AcceptAdButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button DeleteAdButton;
+        private System.Windows.Forms.Panel StatusPanel;
+        private System.Windows.Forms.RadioButton statusAccepted;
+        private System.Windows.Forms.RadioButton statusActive;
     }
 }

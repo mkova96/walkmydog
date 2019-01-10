@@ -141,6 +141,7 @@
             this.passwordTextbox.Location = new System.Drawing.Point(477, 210);
             this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.PasswordChar = '*';
             this.passwordTextbox.Size = new System.Drawing.Size(153, 22);
             this.passwordTextbox.TabIndex = 9;
             // 
@@ -335,7 +336,6 @@
             this.UpdateAccountButton.Text = "Uredi profil";
             this.UpdateAccountButton.UseVisualStyleBackColor = true;
             this.UpdateAccountButton.Click += new System.EventHandler(this.UpdateWalker);
-
             // 
             // walkerId
             // 
