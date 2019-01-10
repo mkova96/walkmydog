@@ -13,5 +13,8 @@ namespace WalkMyDog.Model.Repositories
 
         WalkerAd GetWalkerAd(int Id);
         OwnerAd GetOwnerAd(int Id);
+
+        bool UpdateAd(Ad Ad);
+
     }
 }

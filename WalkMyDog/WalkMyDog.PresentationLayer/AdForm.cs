@@ -33,13 +33,14 @@ namespace WalkMyDog.PresentationLayer
         }
         private void UpdateAd(object sender, EventArgs e)
         {
-            // MainFormController.CreateAd(this);
+            MainFormController.UpdateAd(this);
         }
         private void AcceptAd(object sender, EventArgs e)
         {
             MainFormController.AcceptAd(this.AdId);
             this.Hide();
         }
+
 
 
 
@@ -121,13 +122,15 @@ namespace WalkMyDog.PresentationLayer
         {
             AcceptAdButton.Hide();
             ViewOwnerDetailsButton.Hide();
-            UpdateAdButton.Hide();
+            //UpdateAdButton.Hide();
         }
 
         public void AdjustEditView()
         {
-            AcceptAdButton.Hide();
-            CreateAdButton.Hide();
+            //AcceptAdButton.Hide();
+            //CreateAdButton.Hide();
+            button1.Show(); ////dodano
+            
         }
 
         public void AdjustApplyYesView()

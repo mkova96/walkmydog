@@ -29,6 +29,8 @@ namespace WalkMyDog.BaseLib
 
         void UpdateWalker(IWalkerView WalkerView);
         void UpdateOwner(IOwnerView OwnerView);
+        void UpdateAd(IAdView AdView);
+
 
 
 

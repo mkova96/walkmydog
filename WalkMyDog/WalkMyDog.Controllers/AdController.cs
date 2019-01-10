@@ -42,8 +42,6 @@ namespace WalkMyDog.Controllers
                 return Ad;
             }
             return AdRepository.GetOwnerAd(Id);
-
-
         }
 
         public void CreateAd(IAdView AdView, IUserRepository UserRepository, User CurrentUser)
@@ -130,5 +128,25 @@ namespace WalkMyDog.Controllers
             }
 
         }*/
+
+
+        public void UpdateAd(IAdView AdView,
+           IAdRepository AdRepository, Ad Ad)
+        {
+
+            Ad.Title = AdView.Title;
+            Ad.Description = AdView.Description;
+            Ad.DogsNumber = AdView.DogsNumber;
+            Ad.Hours = AdView.Hours;
+            Ad.Price = AdView.Price;
+
+            //Walker.Status = WalkerView.Status;
+
+            AdRepository.UpdateAd(Ad);
+
+
+            var frm = (Form)AdView;
+            frm.Close();
+        }
     }
 }

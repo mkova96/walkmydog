@@ -13,8 +13,7 @@ namespace WalkMyDog.Controllers
     {
         IMainView MainView;
 
-        public User Login(IUserRepository UserRepository, ILoginView LoginView, IMainFormController MainController
-            )
+        public User Login(IUserRepository UserRepository, ILoginView LoginView, IMainFormController MainController)
         {
             string Username = LoginView.GetUsername();
             string Password = LoginView.GetPassword();

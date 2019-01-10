@@ -65,8 +65,6 @@ namespace WalkMyDog.Controllers
             }
             OwnerAd po = (OwnerAd)AdRepository.GetOwnerAd(Id);
             return po.Owner;
-
-
         }
         public void ShowMyProfile()
         {
@@ -238,6 +236,14 @@ namespace WalkMyDog.Controllers
                 MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
+            
+           /*if (GetOwner(AdForm.AdId, AdRepository)!= CurrentUser)// dodan uvjet
+            {
+                AdForm.AdjustEditView();
+            }*/
+
+
+
             AdController AdController = new AdController();
             //AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
             AdController.ShowAdForm(AdForm, Id, UserRepository, AdRepository, CurrentUser);
@@ -321,6 +327,22 @@ namespace WalkMyDog.Controllers
         {
             OwnerController OwnerController = new OwnerController();
             OwnerController.UpdateOwner(OwnerView, UserRepository,CurrentUser);
+        }
+
+        public void UpdateAd(IAdView AdView)
+        {
+            AdController AdController = new AdController();
+            AdController.UpdateAd(AdView, AdRepository, GetAd(AdView.AdId,AdRepository));
+        }
+
+        private Ad GetAd(int Id, IAdRepository AdRepository)
+        {
+            Ad Ad = AdRepository.GetWalkerAd(Id);
+            if (Ad != null)
+            {
+                return Ad;
+            }
+            return AdRepository.GetOwnerAd(Id);
         }
 
 
