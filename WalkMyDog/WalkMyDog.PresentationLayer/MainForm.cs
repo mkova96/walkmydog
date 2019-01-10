@@ -43,13 +43,13 @@ namespace WalkMyDog.PresentationLayer
         private void ShowWalkerAd(object sender, EventArgs e)
         {
             ListViewItem firstSelectedItem = WalkerAdsList.SelectedItems[0];
-            int Id = Int32.Parse(firstSelectedItem.SubItems[0].Text.ToString());
+            int Id = Int32.Parse(firstSelectedItem.SubItems[4].Text.ToString());
             MainController.ShowAdForm(Id, this);
         }
         private void ShowOwnerAd(object sender, EventArgs e)
         {
             ListViewItem firstSelectedItem = OwnerAdsList.SelectedItems[0];
-            int Id = Int32.Parse(firstSelectedItem.SubItems[0].Text.ToString());
+            int Id = Int32.Parse(firstSelectedItem.SubItems[4].Text.ToString());
             MainController.ShowAdForm(Id, this);
         }
 
@@ -100,7 +100,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 foreach (var o in value)
                 {
-                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Id.ToString(), o.Walker.Username, o.DogsNumber.ToString(), o.Price.ToString(), o.Date.ToShortTimeString() })); ///// PAZI 
+                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Walker.Username, o.Price.ToString(), o.DogsNumber.ToString(),o.Id.ToString()})); ///// PAZI 
 
                 }
 
@@ -118,7 +118,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 foreach (var o in value)
                 {
-                    OwnerAdsList.Items.Add(new ListViewItem(new[] { o.Id.ToString(), o.Owner.Username, o.DogsNumber.ToString(), o.Price.ToString(), o.Date.ToShortDateString() }));  ///// PAZI
+                    OwnerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Owner.Username, o.Price.ToString(), o.DogsNumber.ToString(), o.Id.ToString() }));  ///// PAZI
 
                 }
             }
@@ -136,6 +136,11 @@ namespace WalkMyDog.PresentationLayer
         }
 
         private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -227,14 +227,16 @@ namespace WalkMyDog.Controllers
                 return;
             }
             //AdForm.AdjustEditView();
+            System.Diagnostics.Debug.WriteLine("dada "+GetOwner(Id, AdRepository).Username);
 
-            /*if (GetOwner(AdForm.AdId, AdRepository)!= CurrentUser)// dodan uvjet
-             {
-             }*/
+             if (GetOwner(Id, AdRepository).Username!= CurrentUser.Username)// dodan uvjet
+              {
+                AdForm.NotUsersAd();
+              }
+              
 
 
-
-            AdController AdController = new AdController();
+             AdController AdController = new AdController();
             //AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
             AdController.ShowAdForm(AdForm, Id, UserRepository, AdRepository, CurrentUser);
 

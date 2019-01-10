@@ -45,7 +45,6 @@
             this.adId = new System.Windows.Forms.Button();
             this.AcceptAdButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.DeleteAdButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).BeginInit();
@@ -239,16 +238,6 @@
             this.label3.TabIndex = 36;
             this.label3.Text = "Oglas";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(680, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.UpdateAd);
-            // 
             // DeleteAdButton
             // 
             this.DeleteAdButton.Location = new System.Drawing.Point(475, 402);
@@ -258,7 +247,6 @@
             this.DeleteAdButton.Text = "Obrisi oglas";
             this.DeleteAdButton.UseVisualStyleBackColor = true;
             this.DeleteAdButton.Click += new System.EventHandler(this.DeleteAd);
-
             // 
             // AdForm
             // 
@@ -266,7 +254,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 555);
             this.Controls.Add(this.DeleteAdButton);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label4);
@@ -314,7 +301,6 @@
         private System.Windows.Forms.Button adId;
         private System.Windows.Forms.Button AcceptAdButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button DeleteAdButton;
     }
 }

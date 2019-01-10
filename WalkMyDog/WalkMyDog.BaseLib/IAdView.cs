@@ -10,7 +10,9 @@ namespace WalkMyDog.BaseLib
     {
         int AdId { get; set; }
         void AdjustCreateView();
-        void AdjustEditView();
+        void NotUsersAd();
+        void HideCreate();
+
 
         double Price { get; set; }
         string Title { get; set; }

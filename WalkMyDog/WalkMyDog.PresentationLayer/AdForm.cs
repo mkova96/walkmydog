@@ -131,11 +131,10 @@ namespace WalkMyDog.PresentationLayer
             //UpdateAdButton.Hide();
         }
 
-        public void AdjustEditView()
+        public void NotUsersAd()
         {
-            //AcceptAdButton.Hide();
-            //CreateAdButton.Hide();
-            button1.Show(); ////dodano
+            UpdateAdButton.Hide();
+            DeleteAdButton.Hide();
             
         }
 
