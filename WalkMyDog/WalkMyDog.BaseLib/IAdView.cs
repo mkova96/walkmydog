@@ -11,8 +11,6 @@ namespace WalkMyDog.BaseLib
         int AdId { get; set; }
         void AdjustCreateView();
         void AdjustEditView();
-        void AdjustApplyYesView();
-        void AdjustApplyNoView();
 
         double Price { get; set; }
         string Title { get; set; }

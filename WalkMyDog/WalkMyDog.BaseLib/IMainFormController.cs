@@ -31,6 +31,10 @@ namespace WalkMyDog.BaseLib
         void UpdateOwner(IOwnerView OwnerView);
         void UpdateAd(IAdView AdView);
 
+        void DeleteAd(IAdView AdView);
+
+
+
 
 
 

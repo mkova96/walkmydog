@@ -109,5 +109,31 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
             }
             return true;
         }
+
+        public bool DeleteAd(Ad Ad)
+        {
+            using (var session = NHibernateService.OpenSession())
+            {
+                try
+                {
+                    using (var transaction = session.BeginTransaction())
+                    {
+
+                        session.Delete(Ad);
+                        transaction.Commit();
+                    }
+                    session.Clear();
+                    //session.Close();
+
+                }
+                catch (Exception e)
+                {
+                    Logger.Log(e);
+                    return false;
+                }
+
+            }
+            return true;
+        }
     }
 }

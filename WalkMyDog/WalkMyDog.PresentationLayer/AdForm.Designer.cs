@@ -46,6 +46,7 @@
             this.AcceptAdButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.DeleteAdButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
@@ -55,7 +56,7 @@
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(472, 332);
+            this.label13.Location = new System.Drawing.Point(472, 317);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 17);
@@ -153,7 +154,7 @@
             // CreateAdButton
             // 
             this.CreateAdButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.CreateAdButton.Location = new System.Drawing.Point(322, 452);
+            this.CreateAdButton.Location = new System.Drawing.Point(301, 473);
             this.CreateAdButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateAdButton.Name = "CreateAdButton";
             this.CreateAdButton.Size = new System.Drawing.Size(210, 50);
@@ -219,7 +220,7 @@
             // AcceptAdButton
             // 
             this.AcceptAdButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.AcceptAdButton.Location = new System.Drawing.Point(478, 362);
+            this.AcceptAdButton.Location = new System.Drawing.Point(475, 348);
             this.AcceptAdButton.Margin = new System.Windows.Forms.Padding(4);
             this.AcceptAdButton.Name = "AcceptAdButton";
             this.AcceptAdButton.Size = new System.Drawing.Size(208, 38);
@@ -247,6 +248,16 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.UpdateAd);
+            // 
+            // DeleteAdButton
+            // 
+            this.DeleteAdButton.Location = new System.Drawing.Point(475, 402);
+            this.DeleteAdButton.Name = "DeleteAdButton";
+            this.DeleteAdButton.Size = new System.Drawing.Size(208, 42);
+            this.DeleteAdButton.TabIndex = 38;
+            this.DeleteAdButton.Text = "Obrisi oglas";
+            this.DeleteAdButton.UseVisualStyleBackColor = true;
+            this.DeleteAdButton.Click += new System.EventHandler(this.DeleteAd);
 
             // 
             // AdForm
@@ -254,6 +265,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 555);
+            this.Controls.Add(this.DeleteAdButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label13);
@@ -303,5 +315,6 @@
         private System.Windows.Forms.Button AcceptAdButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DeleteAdButton;
     }
 }

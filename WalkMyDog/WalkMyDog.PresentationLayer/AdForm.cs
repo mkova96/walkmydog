@@ -41,6 +41,11 @@ namespace WalkMyDog.PresentationLayer
             this.Hide();
         }
 
+        private void DeleteAd(object sender, EventArgs e)
+        {
+            MainFormController.DeleteAd(this);
+        }
+
 
 
 
@@ -122,6 +127,7 @@ namespace WalkMyDog.PresentationLayer
         {
             AcceptAdButton.Hide();
             ViewOwnerDetailsButton.Hide();
+            DeleteAdButton.Hide();
             //UpdateAdButton.Hide();
         }
 
@@ -133,18 +139,10 @@ namespace WalkMyDog.PresentationLayer
             
         }
 
-        public void AdjustApplyYesView()
+        public void HideCreate()
         {
             CreateAdButton.Hide();
-            UpdateAdButton.Hide();
-
         }
 
-        public void AdjustApplyNoView()
-        {
-            CreateAdButton.Hide();
-            UpdateAdButton.Hide();
-            AcceptAdButton.Hide();
-        }
     }
 }

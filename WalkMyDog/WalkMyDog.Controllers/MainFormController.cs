@@ -208,39 +208,29 @@ namespace WalkMyDog.Controllers
             AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
 
             WalkerAd no = AdRepository.GetWalkerAd(Id);
+
             if (no != null)
             {
-                if (CurrentUser.UserType == UserType.WALKER)
-                {
-                    AdForm.AdjustApplyNoView();
-                }
-                else
-                {
-                    AdForm.AdjustApplyYesView();
-                }
+                AdForm.HideCreate();
             }
+
             OwnerAd po = AdRepository.GetOwnerAd(Id);
+
             if (po != null)
             {
-                if (CurrentUser.UserType == UserType.OWNER)
-                {
-                    AdForm.AdjustApplyNoView();
-                }
-                else
-                {
-                    AdForm.AdjustApplyYesView();
-                }
+                AdForm.HideCreate();
             }
+
             if (CurrentUser == null)
             {
                 MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
-            
-           /*if (GetOwner(AdForm.AdId, AdRepository)!= CurrentUser)// dodan uvjet
-            {
-                AdForm.AdjustEditView();
-            }*/
+            //AdForm.AdjustEditView();
+
+            /*if (GetOwner(AdForm.AdId, AdRepository)!= CurrentUser)// dodan uvjet
+             {
+             }*/
 
 
 
@@ -333,6 +323,13 @@ namespace WalkMyDog.Controllers
         {
             AdController AdController = new AdController();
             AdController.UpdateAd(AdView, AdRepository, GetAd(AdView.AdId,AdRepository));
+        }
+
+        public void DeleteAd(IAdView AdView)
+        {
+            AdController AdController = new AdController();
+            AdController.DeleteAd(AdView, AdRepository, GetAd(AdView.AdId, AdRepository));
+            ShowMainForm();
         }
 
         private Ad GetAd(int Id, IAdRepository AdRepository)

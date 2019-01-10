@@ -148,5 +148,16 @@ namespace WalkMyDog.Controllers
             var frm = (Form)AdView;
             frm.Close();
         }
+
+        public void DeleteAd(IAdView AdView,
+           IAdRepository AdRepository, Ad Ad)
+        {
+            AdRepository.DeleteAd(Ad);
+
+
+            var frm = (Form)AdView;
+            frm.Close();
+        }
+
     }
 }
