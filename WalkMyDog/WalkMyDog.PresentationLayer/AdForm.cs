@@ -128,7 +128,7 @@ namespace WalkMyDog.PresentationLayer
             AcceptAdButton.Hide();
             ViewOwnerDetailsButton.Hide();
             DeleteAdButton.Hide();
-            //UpdateAdButton.Hide();
+            UpdateAdButton.Hide();
         }
 
         public void NotUsersAd()

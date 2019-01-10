@@ -208,7 +208,7 @@
             // adId
             // 
             this.adId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.adId.Location = new System.Drawing.Point(34, 10);
+            this.adId.Location = new System.Drawing.Point(25, 13);
             this.adId.Margin = new System.Windows.Forms.Padding(4);
             this.adId.Name = "adId";
             this.adId.Size = new System.Drawing.Size(208, 28);

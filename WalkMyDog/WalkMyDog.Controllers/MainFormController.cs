@@ -221,13 +221,18 @@ namespace WalkMyDog.Controllers
                 AdForm.HideCreate();
             }
 
+            if (no==null && po == null)
+            {
+                System.Diagnostics.Debug.WriteLine("BUDA");
+                AdForm.AdjustCreateView();
+            }
+
             if (CurrentUser == null)
             {
                 MessageBox.Show("Logon or create account to view Ad details");
                 return;
             }
-            //AdForm.AdjustEditView();
-            System.Diagnostics.Debug.WriteLine("dada "+GetOwner(Id, AdRepository).Username);
+
 
              if (GetOwner(Id, AdRepository).Username!= CurrentUser.Username)// dodan uvjet
               {
@@ -250,8 +255,12 @@ namespace WalkMyDog.Controllers
             var frm = (Form)MainView;
             frm.Hide();
 
+
+
             AdController AdController = new AdController();
             AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
+            AdForm.AdjustCreateView();
+
             AdController.ShowAdForm(AdForm);
         }
 

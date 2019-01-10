@@ -47,9 +47,6 @@
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AdsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.welcomeLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.NewAdButton = new System.Windows.Forms.Button();
             this.menu.SuspendLayout();
@@ -59,10 +56,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Small", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(773, 193);
+            this.label1.Location = new System.Drawing.Point(854, 194);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 50);
+            this.label1.Size = new System.Drawing.Size(241, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Oglasi šetača";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -71,10 +68,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Small", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(18, 198);
+            this.label3.Location = new System.Drawing.Point(124, 194);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(373, 50);
+            this.label3.Size = new System.Drawing.Size(361, 49);
             this.label3.TabIndex = 2;
             this.label3.Text = "Oglasi vlasnika pasa";
             // 
@@ -88,10 +85,10 @@
             this.date});
             this.WalkerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.WalkerAdsList.HoverSelection = true;
-            this.WalkerAdsList.Location = new System.Drawing.Point(782, 247);
+            this.WalkerAdsList.Location = new System.Drawing.Point(695, 247);
             this.WalkerAdsList.Margin = new System.Windows.Forms.Padding(4);
             this.WalkerAdsList.Name = "WalkerAdsList";
-            this.WalkerAdsList.Size = new System.Drawing.Size(501, 249);
+            this.WalkerAdsList.Size = new System.Drawing.Size(655, 249);
             this.WalkerAdsList.TabIndex = 3;
             this.WalkerAdsList.UseCompatibleStateImageBehavior = false;
             this.WalkerAdsList.View = System.Windows.Forms.View.Details;
@@ -138,7 +135,7 @@
             this.OwnerAdsList.Location = new System.Drawing.Point(27, 247);
             this.OwnerAdsList.Margin = new System.Windows.Forms.Padding(4);
             this.OwnerAdsList.Name = "OwnerAdsList";
-            this.OwnerAdsList.Size = new System.Drawing.Size(496, 249);
+            this.OwnerAdsList.Size = new System.Drawing.Size(645, 249);
             this.OwnerAdsList.TabIndex = 4;
             this.OwnerAdsList.UseCompatibleStateImageBehavior = false;
             this.OwnerAdsList.View = System.Windows.Forms.View.Details;
@@ -174,12 +171,12 @@
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.loginButton.Location = new System.Drawing.Point(200, 530);
+            this.loginButton.Location = new System.Drawing.Point(419, 536);
             this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(493, 61);
             this.loginButton.TabIndex = 5;
-            this.loginButton.Text = "Prijava";
+            this.loginButton.Text = "Prijava / Registracija";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.ShowLoginForm);
             // 
@@ -187,12 +184,11 @@
             // 
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.accountToolStripMenuItem,
-            this.AdsToolStripMenuItem});
+            this.accountToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1370, 28);
+            this.menu.Size = new System.Drawing.Size(1396, 28);
             this.menu.TabIndex = 6;
             this.menu.Text = "menuStrip1";
             // 
@@ -202,47 +198,22 @@
             this.loginToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.accountToolStripMenuItem.Text = "Account";
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.accountToolStripMenuItem.Text = "Moj profil";
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.loginToolStripMenuItem.Text = "My profile";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.loginToolStripMenuItem.Text = "Uredi profil";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.ShowMyProfile);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.logoutToolStripMenuItem.Text = "Odjavi se";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.Logout);
-            // 
-            // AdsToolStripMenuItem
-            // 
-            this.AdsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addAdToolStripMenuItem});
-            this.AdsToolStripMenuItem.Name = "AdsToolStripMenuItem";
-            this.AdsToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.AdsToolStripMenuItem.Text = "Ads";
-            // 
-            // addAdToolStripMenuItem
-            // 
-            this.addAdToolStripMenuItem.Name = "addAdToolStripMenuItem";
-            this.addAdToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
-            this.addAdToolStripMenuItem.Text = "Add Ad";
-            this.addAdToolStripMenuItem.Click += new System.EventHandler(this.ShowAdForm);
-            // 
-            // welcomeLabel
-            // 
-            this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.welcomeLabel.Location = new System.Drawing.Point(32, 30);
-            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(0, 20);
-            this.welcomeLabel.TabIndex = 7;
             // 
             // label2
             // 
@@ -257,22 +228,23 @@
             // NewAdButton
             // 
             this.NewAdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NewAdButton.Location = new System.Drawing.Point(725, 530);
+            this.NewAdButton.Location = new System.Drawing.Point(419, 536);
             this.NewAdButton.Margin = new System.Windows.Forms.Padding(4);
             this.NewAdButton.Name = "NewAdButton";
             this.NewAdButton.Size = new System.Drawing.Size(493, 61);
             this.NewAdButton.TabIndex = 9;
             this.NewAdButton.Text = "Novi oglas";
             this.NewAdButton.UseVisualStyleBackColor = true;
+            this.NewAdButton.Visible = false;
+            this.NewAdButton.Click += new System.EventHandler(this.ShowAdForm);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 659);
+            this.ClientSize = new System.Drawing.Size(1396, 659);
             this.Controls.Add(this.NewAdButton);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.OwnerAdsList);
@@ -309,10 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AdsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addAdToolStripMenuItem;
-
-        private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.ColumnHeader Id;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label2;

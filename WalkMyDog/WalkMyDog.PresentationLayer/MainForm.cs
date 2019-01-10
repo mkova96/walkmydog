@@ -28,6 +28,7 @@ namespace WalkMyDog.PresentationLayer
         public void ShowLoginButton()
         {
             loginButton.Show();
+            NewAdButton.Hide();
         }
 
         private void ShowMyProfile(object sender, EventArgs e)
@@ -70,13 +71,14 @@ namespace WalkMyDog.PresentationLayer
         public void HideLoginButton()
         {
             this.loginButton.Hide();
+            this.NewAdButton.Show();
         }
 
 
 
         public void SetWelcomeLabel(string text)
         {
-            welcomeLabel.Text = text;
+            //welcomeLabel.Text = text;
         }
 
 
