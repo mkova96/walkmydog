@@ -287,6 +287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseForm2);
+
 
         }
 

@@ -84,7 +84,7 @@ namespace WalkMyDog.Controllers
 
 
             var frm = (Form)OwnerView;
-            frm.Close();
+            frm.Hide();
         }
     }
 }

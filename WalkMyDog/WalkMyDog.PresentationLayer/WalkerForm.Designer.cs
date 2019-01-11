@@ -348,6 +348,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ageNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WalkerForm_FormClosed);
+
 
         }
 

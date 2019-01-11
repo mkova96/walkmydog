@@ -17,21 +17,19 @@ namespace WalkMyDog.BaseLib
         void ShowOwnerForm(Form LoginView);
         void CreateOwner(IOwnerView OwnerView);
         void ShowAdForm(IMainView MainView); //MJENJANO
-        void ShowMyProfile();
+        void ShowMyProfile(IMainView MainView);
         void CreateAd(IAdView AdView);
         void ShowAdForm(int Id, IMainView MinView);
         void ShowOwner(IAdView AdView);
         void Logout(IMainView MainView);
         void InitializeLists(IMainView MainView);
 
-        void AcceptAd(int Id);
-
-
         void UpdateWalker(IWalkerView WalkerView);
         void UpdateOwner(IOwnerView OwnerView);
         void UpdateAd(IAdView AdView);
 
         void DeleteAd(IAdView AdView);
+        void CloseLogin();
 
 
 

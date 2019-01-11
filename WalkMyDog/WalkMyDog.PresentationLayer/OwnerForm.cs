@@ -146,5 +146,10 @@ namespace WalkMyDog.PresentationLayer
         {
             MainFormController.UpdateOwner(this);
         }
+        private void OwnerForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MainFormController.CloseLogin();
+
+        }
     }
 }

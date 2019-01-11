@@ -33,7 +33,7 @@ namespace WalkMyDog.PresentationLayer
 
         private void ShowMyProfile(object sender, EventArgs e)
         {
-            MainController.ShowMyProfile();
+            MainController.ShowMyProfile(this);
         }
         private void Logout(object sender, EventArgs e)
         {

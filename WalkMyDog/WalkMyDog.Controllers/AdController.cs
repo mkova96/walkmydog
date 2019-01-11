@@ -85,51 +85,6 @@ namespace WalkMyDog.Controllers
             form.Hide();
         }
 
-        /*public void AcceptAd(User CurrentUser, int AdId, IAdRepository AdRepository,
-            IUserRepository UserRepository, ICooperationRepository CoorporationRepository)
-        {
-            Ad Ad = GetAd(AdId, AdRepository);
-            User Aceptee = null;
-            Type o = Ad.GetType();
-            if (Ad.GetType() == typeof(WalkerAd))
-            {
-                WalkerAd no = (WalkerAd)Ad;
-                Aceptee = no.Walker;
-            }
-            else if (Ad.GetType() == typeof(OwnerAd))
-            {
-                OwnerAd po = (OwnerAd)Ad;
-                Aceptee = po.Owner;
-            }
-            else
-            {
-                MessageBox.Show("Error");
-                return;
-            }
-
-            Cooperation Cooperation = CooperationFactory.CreateCooperation(CurrentUser, Aceptee, Ad);
-            // CoorporationRepository.AddCooperation(Cooperation);
-
-            if (Aceptee.UserType == UserType.Walker)
-            {
-                Walker n = (Walker)Aceptee;
-                n.AddCooperation(Cooperation);
-                UserRepository.UpdateUser(n);
-                MessageBox.Show("You applied successfully");
-
-            }
-            else if (Aceptee.UserType == UserType.Owner)
-            {
-                Owner p = (Owner)Aceptee;
-                p.AddCooperation(Cooperation);
-                UserRepository.UpdateUser(p);
-                MessageBox.Show("You applied successfully");
-
-            }
-
-        }*/
-
-
         public void UpdateAd(IAdView AdView,
            IAdRepository AdRepository, Ad Ad)
         {
@@ -147,7 +102,7 @@ namespace WalkMyDog.Controllers
 
 
             var frm = (Form)AdView;
-            frm.Close();
+            frm.Hide();
         }
 
         public void DeleteAd(IAdView AdView,
@@ -157,7 +112,7 @@ namespace WalkMyDog.Controllers
 
 
             var frm = (Form)AdView;
-            frm.Close();
+            frm.Hide();
         }
 
     }

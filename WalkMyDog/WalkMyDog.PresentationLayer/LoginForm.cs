@@ -45,6 +45,14 @@ namespace WalkMyDog.PresentationLayer
         public void CreateOwner(object sender, EventArgs e)
         {
             controller.ShowOwnerForm(this);
+            this.Hide();
+
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            controller.CloseLogin();
+
         }
 
         private void LoginForm_Load(object sender, EventArgs e)

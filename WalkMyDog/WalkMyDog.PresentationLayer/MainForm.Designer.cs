@@ -270,7 +270,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
-            this.Text = "StartForm";
+            this.Text = "WalkMyDog";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();

@@ -239,10 +239,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "OwnerForm";
-            this.Text = "OwnerForm";
+            this.Text = "Owner";
             ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OwnerForm_FormClosed);
+
 
         }
 

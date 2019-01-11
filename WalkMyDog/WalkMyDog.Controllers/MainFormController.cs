@@ -49,7 +49,8 @@ namespace WalkMyDog.Controllers
         }
         public void ShowOwner(IAdView AdView)
         {
-
+            var frm = (Form)AdView;
+            frm.Hide();
             ShowProfile(GetOwner(AdView.AdId, AdRepository));
 
         }
@@ -65,8 +66,10 @@ namespace WalkMyDog.Controllers
             OwnerAd po = (OwnerAd)AdRepository.GetOwnerAd(Id);
             return po.Owner;
         }
-        public void ShowMyProfile()
+        public void ShowMyProfile(IMainView MainView)
         {
+            var frm = (Form)MainView;
+            frm.Hide();
             ShowProfile(CurrentUser);
         }
 
@@ -109,7 +112,7 @@ namespace WalkMyDog.Controllers
             }
             else
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Greška");
                 return;
             }
         }
@@ -142,12 +145,6 @@ namespace WalkMyDog.Controllers
             return Ads.GetRange(0,Ads.Count);
         }
 
-        /*public void AcceptAd(int AdId)
-        {
-            AdController AdController = new AdController();
-            AdController.AcceptAd(CurrentUser, AdId, AdRepository, UserRepository);
-        }*/
-
         public void ShowLoginForm(IMainView MainView)
         {
             var frm = (Form)MainView;
@@ -169,7 +166,7 @@ namespace WalkMyDog.Controllers
             CreateWalkerForm.AdjustCreateView();
             WalkerController.ShowWalkerForm(CreateWalkerForm);
 
-            LoginView.Close();
+            LoginView.Hide();
         }
         public void CreateWalker(IWalkerView WalkerForm)
         {
@@ -180,7 +177,21 @@ namespace WalkMyDog.Controllers
                 return;
             }
             var frm = (Form)WalkerForm;
-            frm.Close();
+            frm.Hide();
+            CurrentUser = User;
+            ShowMainForm();
+        }
+
+        public void CreateOwner(IOwnerView OwnerForm)
+        {
+            OwnerController OwnerController = new OwnerController();
+            User User = OwnerController.CreateOwner(OwnerForm, UserRepository);
+            if (User == null)
+            {
+                return;
+            }
+            var frm = (Form)OwnerForm;
+            frm.Hide();
             CurrentUser = User;
             ShowMainForm();
         }
@@ -194,15 +205,11 @@ namespace WalkMyDog.Controllers
         }
         public void ShowAdForm(int Id, IMainView MainView)
         {
-
-
             if (CurrentUser == null)
             {
-                MessageBox.Show("Logon or create account to view Ad details");
+                MessageBox.Show("Morate biti prijavljeni da biste vidjeli cijeli oglas");
                 return;
             }
-
-            ShowMainForm();
 
             var frm = (Form)MainView;
             frm.Hide();
@@ -225,13 +232,12 @@ namespace WalkMyDog.Controllers
 
             if (no==null && po == null)
             {
-                System.Diagnostics.Debug.WriteLine("BUDA");
                 AdForm.AdjustCreateView();
             }
 
             if (CurrentUser == null)
             {
-                MessageBox.Show("Logon or create account to view Ad details");
+                MessageBox.Show("Morate biti prijavljeni da biste vidjeli cijeli oglas");
                 return;
             }
 
@@ -252,8 +258,6 @@ namespace WalkMyDog.Controllers
         }
         public void ShowAdForm(IMainView MainView) ///MJENJAM
         {
-            ShowMainForm();
-
             var frm = (Form)MainView;
             frm.Hide();
 
@@ -272,35 +276,17 @@ namespace WalkMyDog.Controllers
             OwnerForm OwnerForm = (OwnerForm)WindowFormsFactory.CreateOwnerView(this);
             OwnerForm.AdjustCreateView();
             OwnerController.ShowOwnerForm(OwnerForm);
-            LoginView.Close();
+            LoginView.Hide();
 
-        }
-
-        public void CreateOwner(IOwnerView OwnerForm)
-        {
-            OwnerController OwnerController = new OwnerController();
-            User User = OwnerController.CreateOwner(OwnerForm, UserRepository);
-            if (User == null)
-            {
-                return;
-            }
-            var frm = (Form)OwnerForm;
-            frm.Close();
-            CurrentUser = User;
-            ShowMainForm();
         }
 
         public void LoginUser(ILoginView LoginView)
         {
             AccountController AccountController = new AccountController();
-
             User User = AccountController.Login(UserRepository, LoginView, this);
-
             CurrentUser = User;
-
             ShowMainForm();
         }
-
         public void Logout(IMainView MainView)
         {
             CurrentUser = null;
@@ -312,32 +298,26 @@ namespace WalkMyDog.Controllers
         public void ShowCreateAdForm()
         {
             AdController AdController = new AdController();
-
         }
-
-        public void AcceptAd(int Id)
-        {
-            throw new NotImplementedException();
-        }
-
 
         public void UpdateWalker(IWalkerView WalkerView)
         {
             WalkerController WalkerController = new WalkerController();
             WalkerController.UpdateWalker(WalkerView, UserRepository, (Walker)CurrentUser);
+            ShowMainForm();
         }
         public void UpdateOwner(IOwnerView OwnerView)
         {
             OwnerController OwnerController = new OwnerController();
             OwnerController.UpdateOwner(OwnerView, UserRepository,CurrentUser);
+            ShowMainForm();
         }
-
         public void UpdateAd(IAdView AdView)
         {
             AdController AdController = new AdController();
             AdController.UpdateAd(AdView, AdRepository, GetAd(AdView.AdId,AdRepository));
+            ShowMainForm();
         }
-
         public void DeleteAd(IAdView AdView)
         {
             AdController AdController = new AdController();
@@ -355,6 +335,23 @@ namespace WalkMyDog.Controllers
             return AdRepository.GetOwnerAd(Id);
         }
 
+        public void CloseLogin()
+        {
+            if (CurrentUser == null)
+            {
+                var mainForm = WindowFormsFactory.CreateMainView(this);
+                var form = (Form)mainForm;
+                form.Show();
+            }
+            else
+            {
+                var mainForm = WindowFormsFactory.CreateMainView(this);
+                mainForm.HideLoginButton();
+                mainForm.EnableMenu();
 
+                var form = (Form)mainForm;
+                form.Show();
+            }            
+        }        
     }
 }

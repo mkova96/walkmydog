@@ -36,11 +36,7 @@ namespace WalkMyDog.PresentationLayer
         {
             MainFormController.UpdateAd(this);
         }
-        private void AcceptAd(object sender, EventArgs e)
-        {
-            MainFormController.AcceptAd(this.AdId);
-            this.Hide();
-        }
+
 
         private void DeleteAd(object sender, EventArgs e)
         {
@@ -163,6 +159,11 @@ namespace WalkMyDog.PresentationLayer
         public void HideCreate()
         {
             CreateAdButton.Hide();
+        }
+
+        private void CloseForm2(object sender, FormClosedEventArgs e)
+        {
+            MainFormController.ShowMainForm();
         }
 
 
