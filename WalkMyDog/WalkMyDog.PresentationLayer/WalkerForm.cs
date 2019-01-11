@@ -46,34 +46,6 @@ namespace WalkMyDog.PresentationLayer
             MainFormController.CreateWalker(this);
         }
 
-        private void DocheckBox1(bool b)
-        {
-            if (b== true){
-                checkBox1.Checked = true;
-            }
-            else
-            {
-                checkBox1.Checked = false;
-            }                  
-        }
-
-        private void DocheckBox2(bool b)
-        {
-            if (b == true)
-            {
-                checkBox2.Checked = true;
-            }
-            else
-            {
-                checkBox2.Checked = false;
-            }
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         public string Username
         {
             get

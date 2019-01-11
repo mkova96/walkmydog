@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using WalkMyDog.BaseLib;
+using WalkMyDog.Model;
 
 namespace WalkMyDog.PresentationLayer
 {
@@ -46,9 +47,29 @@ namespace WalkMyDog.PresentationLayer
             MainFormController.DeleteAd(this);
         }
 
+        public AdStatus AdStatus
+        {
+            get
+            {
+                if (checkBox1.Checked)
+                {
+                    return AdStatus.ACTIVE;
+                }
+                return AdStatus.ACCEPTED;
+            }
 
-
-
+            set
+            {
+                if (value.ToString() == AdStatus.ACTIVE.ToString())
+                {
+                    checkBox1.Checked = true;
+                }
+                else
+                {
+                    checkBox1.Checked = false;
+                }
+            }
+        }
         public double Price
         {
             get
@@ -128,6 +149,8 @@ namespace WalkMyDog.PresentationLayer
             ViewOwnerDetailsButton.Hide();
             DeleteAdButton.Hide();
             UpdateAdButton.Hide();
+            checkBox1.Hide();
+            label13.Hide();
         }
 
         public void NotUsersAd()

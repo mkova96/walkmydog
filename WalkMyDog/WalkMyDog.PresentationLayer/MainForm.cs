@@ -102,7 +102,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 foreach (var o in value)
                 {
-                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Walker.Username, o.Price.ToString(), o.DogsNumber.ToString(),o.Id.ToString(),o.Walker.Dogs.ToString(),o.Walker.Experience.ToString()})); ///// PAZI 
+                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Walker.Username, o.Price.ToString(), o.DogsNumber.ToString(),o.Id.ToString(),o.Walker.Dogs.ToString(),o.Walker.Experience.ToString(), o.AdStatus.ToString() })); ///// PAZI 
 
                 }
 
@@ -120,7 +120,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 foreach (var o in value)
                 {
-                    OwnerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Owner.Username, o.Price.ToString(), o.DogsNumber.ToString(), o.Id.ToString() }));  ///// PAZI
+                    OwnerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Owner.Username, o.Price.ToString(), o.DogsNumber.ToString(), o.Id.ToString() ,o.AdStatus.ToString()}));  ///// PAZI
 
                 }
             }

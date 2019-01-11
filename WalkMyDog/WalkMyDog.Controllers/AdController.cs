@@ -28,7 +28,7 @@ namespace WalkMyDog.Controllers
             //AdView.Date = Ad.Date;
             AdView.Description = Ad.Description;
             AdView.AdId = Ad.Id;
-            //AdView.AdStatus = Ad.AdStatus;
+            AdView.AdStatus = Ad.AdStatus;
 
             var form = (Form)AdView;
             form.Show();
@@ -140,7 +140,8 @@ namespace WalkMyDog.Controllers
             Ad.Hours = AdView.Hours;
             Ad.Price = AdView.Price;
 
-            //Walker.Status = WalkerView.Status;
+            Ad.AdStatus = AdView.AdStatus;
+
 
             AdRepository.UpdateAd(Ad);
 

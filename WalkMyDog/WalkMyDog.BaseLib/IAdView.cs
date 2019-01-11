@@ -16,7 +16,7 @@ namespace WalkMyDog.BaseLib
 
         double Price { get; set; }
         string Title { get; set; }
-        //AdStatus AdStatus { get; set; }
+        AdStatus AdStatus { get; set; }
         string Description { get; set; }
         int DogsNumber { get; set; }
         int Hours { get; set; }

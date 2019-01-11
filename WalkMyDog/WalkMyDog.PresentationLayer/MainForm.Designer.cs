@@ -36,6 +36,8 @@
             this.dogs = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.psi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.iskustvo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.OwnerAdsList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,8 +51,8 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.NewAdButton = new System.Windows.Forms.Button();
-            this.psi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.iskustvo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,8 @@
             this.Price,
             this.date,
             this.psi,
-            this.iskustvo});
+            this.iskustvo,
+            this.status});
             this.WalkerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.WalkerAdsList.HoverSelection = true;
             this.WalkerAdsList.Location = new System.Drawing.Point(695, 247);
@@ -127,6 +130,14 @@
             this.date.Text = "Datum izdavanja";
             this.date.Width = 123;
             // 
+            // psi
+            // 
+            this.psi.Text = "Psi?";
+            // 
+            // iskustvo
+            // 
+            this.iskustvo.Text = "iskustvo";
+            // 
             // OwnerAdsList
             // 
             this.OwnerAdsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -134,7 +145,8 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6});
             this.OwnerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OwnerAdsList.Location = new System.Drawing.Point(27, 247);
             this.OwnerAdsList.Margin = new System.Windows.Forms.Padding(4);
@@ -239,13 +251,9 @@
             this.NewAdButton.Visible = false;
             this.NewAdButton.Click += new System.EventHandler(this.ShowAdForm);
             // 
-            // psi
+            // columnHeader6
             // 
-            this.psi.Text = "Psi?";
-            // 
-            // iskustvo
-            // 
-            this.iskustvo.Text = "iskustvo";
+            this.columnHeader6.Text = "status";
             // 
             // MainForm
             // 
@@ -296,5 +304,7 @@
         private System.Windows.Forms.Button NewAdButton;
         private System.Windows.Forms.ColumnHeader psi;
         private System.Windows.Forms.ColumnHeader iskustvo;
+        private System.Windows.Forms.ColumnHeader status;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }

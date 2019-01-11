@@ -45,25 +45,22 @@
             this.adId = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.DeleteAdButton = new System.Windows.Forms.Button();
-            this.StatusPanel = new System.Windows.Forms.Panel();
-            this.statusAccepted = new System.Windows.Forms.RadioButton();
-            this.statusActive = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
-            this.StatusPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(472, 317);
+            this.label13.Location = new System.Drawing.Point(473, 336);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(94, 17);
+            this.label13.Size = new System.Drawing.Size(100, 17);
             this.label13.TabIndex = 28;
-            this.label13.Text = "Status oglasa";
+            this.label13.Text = "Aktivan oglas?";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -107,6 +104,11 @@
             this.DogsNumberNumeric.Name = "DogsNumberNumeric";
             this.DogsNumberNumeric.Size = new System.Drawing.Size(235, 22);
             this.DogsNumberNumeric.TabIndex = 24;
+            this.DogsNumberNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // HoursNumeric
             // 
@@ -116,6 +118,11 @@
             this.HoursNumeric.Name = "HoursNumeric";
             this.HoursNumeric.Size = new System.Drawing.Size(235, 22);
             this.HoursNumeric.TabIndex = 21;
+            this.HoursNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -240,47 +247,21 @@
             this.DeleteAdButton.UseVisualStyleBackColor = true;
             this.DeleteAdButton.Click += new System.EventHandler(this.DeleteAd);
             // 
-            // StatusPanel
+            // checkBox1
             // 
-            this.StatusPanel.Controls.Add(this.statusAccepted);
-            this.StatusPanel.Controls.Add(this.statusActive);
-            this.StatusPanel.Location = new System.Drawing.Point(475, 338);
-            this.StatusPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.StatusPanel.Name = "StatusPanel";
-            this.StatusPanel.Size = new System.Drawing.Size(191, 34);
-            this.StatusPanel.TabIndex = 39;
-            // 
-            // statusAccepted
-            // 
-            this.statusAccepted.AutoSize = true;
-            this.statusAccepted.Location = new System.Drawing.Point(87, 8);
-            this.statusAccepted.Margin = new System.Windows.Forms.Padding(4);
-            this.statusAccepted.Name = "statusAccepted";
-            this.statusAccepted.Size = new System.Drawing.Size(92, 21);
-            this.statusAccepted.TabIndex = 11;
-            this.statusAccepted.TabStop = true;
-            this.statusAccepted.Text = "Prihvacen";
-            this.statusAccepted.UseVisualStyleBackColor = true;
-            // 
-            // statusActive
-            // 
-            this.statusActive.AutoSize = true;
-            this.statusActive.Checked = true;
-            this.statusActive.Location = new System.Drawing.Point(4, 8);
-            this.statusActive.Margin = new System.Windows.Forms.Padding(4);
-            this.statusActive.Name = "statusActive";
-            this.statusActive.Size = new System.Drawing.Size(75, 21);
-            this.statusActive.TabIndex = 12;
-            this.statusActive.TabStop = true;
-            this.statusActive.Text = "Aktivan";
-            this.statusActive.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(595, 336);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 39;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // AdForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 555);
-            this.Controls.Add(this.StatusPanel);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.DeleteAdButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label13);
@@ -304,8 +285,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
-            this.StatusPanel.ResumeLayout(false);
-            this.StatusPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,8 +309,6 @@
         private System.Windows.Forms.Button adId;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button DeleteAdButton;
-        private System.Windows.Forms.Panel StatusPanel;
-        private System.Windows.Forms.RadioButton statusAccepted;
-        private System.Windows.Forms.RadioButton statusActive;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
