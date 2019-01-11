@@ -38,12 +38,14 @@
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.psi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.iskustvo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.OwnerAdsList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.loginButton = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,8 +53,6 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.NewAdButton = new System.Windows.Forms.Button();
-            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,11 +82,11 @@
             // WalkerAdsList
             // 
             this.WalkerAdsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Id,
-            this.username,
-            this.dogs,
-            this.Price,
             this.date,
+            this.username,
+            this.Price,
+            this.dogs,
+            this.Id,
             this.psi,
             this.iskustvo,
             this.status});
@@ -141,10 +141,10 @@
             // OwnerAdsList
             // 
             this.OwnerAdsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
             this.columnHeader4,
+            this.columnHeader1,
+            this.columnHeader3,
+            this.columnHeader2,
             this.columnHeader5,
             this.columnHeader6});
             this.OwnerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -159,11 +159,13 @@
             // 
             // columnHeader1
             // 
+            this.columnHeader1.DisplayIndex = 1;
             this.columnHeader1.Text = "Korisnik";
             this.columnHeader1.Width = 93;
             // 
             // columnHeader2
             // 
+            this.columnHeader2.DisplayIndex = 3;
             this.columnHeader2.Text = "Broj pasa";
             this.columnHeader2.Width = 86;
             // 
@@ -174,12 +176,17 @@
             // 
             // columnHeader4
             // 
+            this.columnHeader4.DisplayIndex = 0;
             this.columnHeader4.Text = "Datum izdavanja";
             this.columnHeader4.Width = 115;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Id";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "status";
             // 
             // loginButton
             // 
@@ -250,10 +257,6 @@
             this.NewAdButton.UseVisualStyleBackColor = true;
             this.NewAdButton.Visible = false;
             this.NewAdButton.Click += new System.EventHandler(this.ShowAdForm);
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "status";
             // 
             // MainForm
             // 
