@@ -49,19 +49,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.CreateAccountButton = new System.Windows.Forms.Button();
-            this.dogsPanel = new System.Windows.Forms.Panel();
-            this.dogsYes = new System.Windows.Forms.RadioButton();
-            this.dogsNo = new System.Windows.Forms.RadioButton();
-            this.experiencePanel = new System.Windows.Forms.Panel();
-            this.experienceYes = new System.Windows.Forms.RadioButton();
-            this.experienceNo = new System.Windows.Forms.RadioButton();
             this.UpdateAccountButton = new System.Windows.Forms.Button();
             this.walkerId = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.ageNumeric)).BeginInit();
-            this.dogsPanel.SuspendLayout();
-            this.experiencePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -239,7 +233,7 @@
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(415, 551);
+            this.label13.Location = new System.Drawing.Point(415, 510);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(133, 28);
@@ -247,7 +241,7 @@
             // 
             // CreateAccountButton
             // 
-            this.CreateAccountButton.Location = new System.Drawing.Point(216, 473);
+            this.CreateAccountButton.Location = new System.Drawing.Point(216, 432);
             this.CreateAccountButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateAccountButton.Name = "CreateAccountButton";
             this.CreateAccountButton.Size = new System.Drawing.Size(232, 43);
@@ -256,79 +250,9 @@
             this.CreateAccountButton.UseVisualStyleBackColor = true;
             this.CreateAccountButton.Click += new System.EventHandler(this.CreateWalker);
             // 
-            // dogsPanel
-            // 
-            this.dogsPanel.Controls.Add(this.dogsYes);
-            this.dogsPanel.Controls.Add(this.dogsNo);
-            this.dogsPanel.Location = new System.Drawing.Point(41, 416);
-            this.dogsPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.dogsPanel.Name = "dogsPanel";
-            this.dogsPanel.Size = new System.Drawing.Size(153, 34);
-            this.dogsPanel.TabIndex = 33;
-            // 
-            // dogsYes
-            // 
-            this.dogsYes.AutoSize = true;
-            this.dogsYes.Location = new System.Drawing.Point(12, 9);
-            this.dogsYes.Margin = new System.Windows.Forms.Padding(4);
-            this.dogsYes.Name = "dogsYes";
-            this.dogsYes.Size = new System.Drawing.Size(47, 21);
-            this.dogsYes.TabIndex = 11;
-            this.dogsYes.TabStop = true;
-            this.dogsYes.Text = "Da";
-            this.dogsYes.UseVisualStyleBackColor = true;
-            // 
-            // dogsNo
-            // 
-            this.dogsNo.AutoSize = true;
-            this.dogsNo.Checked = true;
-            this.dogsNo.Location = new System.Drawing.Point(77, 9);
-            this.dogsNo.Margin = new System.Windows.Forms.Padding(4);
-            this.dogsNo.Name = "dogsNo";
-            this.dogsNo.Size = new System.Drawing.Size(47, 21);
-            this.dogsNo.TabIndex = 12;
-            this.dogsNo.TabStop = true;
-            this.dogsNo.Text = "Ne";
-            this.dogsNo.UseVisualStyleBackColor = true;
-            // 
-            // experiencePanel
-            // 
-            this.experiencePanel.Controls.Add(this.experienceYes);
-            this.experiencePanel.Controls.Add(this.experienceNo);
-            this.experiencePanel.Location = new System.Drawing.Point(478, 422);
-            this.experiencePanel.Margin = new System.Windows.Forms.Padding(4);
-            this.experiencePanel.Name = "experiencePanel";
-            this.experiencePanel.Size = new System.Drawing.Size(153, 34);
-            this.experiencePanel.TabIndex = 34;
-            // 
-            // experienceYes
-            // 
-            this.experienceYes.AutoSize = true;
-            this.experienceYes.Location = new System.Drawing.Point(12, 9);
-            this.experienceYes.Margin = new System.Windows.Forms.Padding(4);
-            this.experienceYes.Name = "experienceYes";
-            this.experienceYes.Size = new System.Drawing.Size(47, 21);
-            this.experienceYes.TabIndex = 11;
-            this.experienceYes.TabStop = true;
-            this.experienceYes.Text = "Da";
-            this.experienceYes.UseVisualStyleBackColor = true;
-            // 
-            // experienceNo
-            // 
-            this.experienceNo.AutoSize = true;
-            this.experienceNo.Checked = true;
-            this.experienceNo.Location = new System.Drawing.Point(77, 9);
-            this.experienceNo.Margin = new System.Windows.Forms.Padding(4);
-            this.experienceNo.Name = "experienceNo";
-            this.experienceNo.Size = new System.Drawing.Size(47, 21);
-            this.experienceNo.TabIndex = 12;
-            this.experienceNo.TabStop = true;
-            this.experienceNo.Text = "Ne";
-            this.experienceNo.UseVisualStyleBackColor = true;
-            // 
             // UpdateAccountButton
             // 
-            this.UpdateAccountButton.Location = new System.Drawing.Point(217, 537);
+            this.UpdateAccountButton.Location = new System.Drawing.Point(217, 496);
             this.UpdateAccountButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateAccountButton.Name = "UpdateAccountButton";
             this.UpdateAccountButton.Size = new System.Drawing.Size(231, 42);
@@ -340,11 +264,12 @@
             // walkerId
             // 
             this.walkerId.AutoSize = true;
-            this.walkerId.Location = new System.Drawing.Point(0, 0);
+            this.walkerId.Location = new System.Drawing.Point(38, 28);
             this.walkerId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.walkerId.Name = "walkerId";
             this.walkerId.Size = new System.Drawing.Size(0, 17);
             this.walkerId.TabIndex = 37;
+            this.walkerId.Visible = false;
             // 
             // label14
             // 
@@ -367,17 +292,35 @@
             this.label17.TabIndex = 42;
             this.label17.Text = "Grad";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(132, 393);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 43;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(711, 393);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
+            this.checkBox2.TabIndex = 44;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // WalkerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 619);
+            this.ClientSize = new System.Drawing.Size(775, 572);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.walkerId);
             this.Controls.Add(this.UpdateAccountButton);
-            this.Controls.Add(this.experiencePanel);
-            this.Controls.Add(this.dogsPanel);
             this.Controls.Add(this.CreateAccountButton);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
@@ -403,10 +346,6 @@
             this.Name = "WalkerForm";
             this.Text = "Walker";
             ((System.ComponentModel.ISupportInitialize)(this.ageNumeric)).EndInit();
-            this.dogsPanel.ResumeLayout(false);
-            this.dogsPanel.PerformLayout();
-            this.experiencePanel.ResumeLayout(false);
-            this.experiencePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,12 +374,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button CreateAccountButton;
-        private System.Windows.Forms.Panel dogsPanel;
-        private System.Windows.Forms.RadioButton dogsYes;
-        private System.Windows.Forms.RadioButton dogsNo;
-        private System.Windows.Forms.Panel experiencePanel;
-        private System.Windows.Forms.RadioButton experienceYes;
-        private System.Windows.Forms.RadioButton experienceNo;
 
         private System.Windows.Forms.Button UpdateAccountButton;
         private System.Windows.Forms.Button ReviewsButton;
@@ -452,5 +385,7 @@
         private System.Windows.Forms.NumericUpDown ageNumeric;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

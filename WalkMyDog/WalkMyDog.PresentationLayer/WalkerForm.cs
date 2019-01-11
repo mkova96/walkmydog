@@ -46,9 +46,27 @@ namespace WalkMyDog.PresentationLayer
             MainFormController.CreateWalker(this);
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void DocheckBox1(bool b)
         {
+            if (b== true){
+                checkBox1.Checked = true;
+            }
+            else
+            {
+                checkBox1.Checked = false;
+            }                  
+        }
 
+        private void DocheckBox2(bool b)
+        {
+            if (b == true)
+            {
+                checkBox2.Checked = true;
+            }
+            else
+            {
+                checkBox2.Checked = false;
+            }
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -144,27 +162,16 @@ namespace WalkMyDog.PresentationLayer
         {
             get
             {
-                var checkedButton = experiencePanel.Controls.OfType<RadioButton>()
-                                                     .FirstOrDefault(r => r.Checked);
-                if (checkedButton.Name.Equals("ExperienceYes"))
+                if (checkBox2.Checked)
                 {
                     return true;
                 }
                 return false;
             }
-            set
-            {
-                if (value == true)
-                {
-                    experienceYes.Checked = true;
-                    experienceNo.Checked = false;
-                }
-                else
-                {
-                    experienceYes.Checked = false;
-                    experienceNo.Checked = true;
 
-                }
+            set
+            {               
+                checkBox2.Checked = value;
             }
         }
 
@@ -172,27 +179,16 @@ namespace WalkMyDog.PresentationLayer
         {
             get
             {
-                var checkedButton = dogsPanel.Controls.OfType<RadioButton>()
-                                                     .FirstOrDefault(r => r.Checked);
-                if (checkedButton.Name.Equals("DogsYes")) ///PAZIII
-                {
+                if (checkBox1.Checked) {
                     return true;
                 }
                 return false;
             }
+            
             set
             {
-                if (value == true)
-                {
-                    dogsYes.Checked = true;
-                    dogsNo.Checked = false;
-                }
-                else
-                {
-                    dogsYes.Checked = false;
-                    dogsNo.Checked = true;
+                checkBox1.Checked = value;
 
-                }
             }
         }
 

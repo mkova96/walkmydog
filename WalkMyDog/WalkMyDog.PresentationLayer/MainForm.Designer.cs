@@ -49,6 +49,8 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.NewAdButton = new System.Windows.Forms.Button();
+            this.psi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.iskustvo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +84,9 @@
             this.username,
             this.dogs,
             this.Price,
-            this.date});
+            this.date,
+            this.psi,
+            this.iskustvo});
             this.WalkerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.WalkerAdsList.HoverSelection = true;
             this.WalkerAdsList.Location = new System.Drawing.Point(695, 247);
@@ -143,13 +147,11 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.DisplayIndex = 1;
             this.columnHeader1.Text = "Korisnik";
             this.columnHeader1.Width = 93;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.DisplayIndex = 3;
             this.columnHeader2.Text = "Broj pasa";
             this.columnHeader2.Width = 86;
             // 
@@ -160,7 +162,6 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.DisplayIndex = 0;
             this.columnHeader4.Text = "Datum izdavanja";
             this.columnHeader4.Width = 115;
             // 
@@ -204,14 +205,14 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.loginToolStripMenuItem.Text = "Uredi profil";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.ShowMyProfile);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.logoutToolStripMenuItem.Text = "Odjavi se";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.Logout);
             // 
@@ -237,6 +238,14 @@
             this.NewAdButton.UseVisualStyleBackColor = true;
             this.NewAdButton.Visible = false;
             this.NewAdButton.Click += new System.EventHandler(this.ShowAdForm);
+            // 
+            // psi
+            // 
+            this.psi.Text = "Psi?";
+            // 
+            // iskustvo
+            // 
+            this.iskustvo.Text = "iskustvo";
             // 
             // MainForm
             // 
@@ -285,5 +294,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button NewAdButton;
+        private System.Windows.Forms.ColumnHeader psi;
+        private System.Windows.Forms.ColumnHeader iskustvo;
     }
 }

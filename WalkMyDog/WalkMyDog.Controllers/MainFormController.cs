@@ -36,7 +36,6 @@ namespace WalkMyDog.Controllers
 
             var mainForm = WindowFormsFactory.CreateMainView(this);
             mainForm.HideLoginButton();
-            mainForm.SetWelcomeLabel("Welcome " + CurrentUser.Name);
             mainForm.EnableMenu();
 
             //mainForm.WalkerAds = getWalkerAds();
@@ -78,9 +77,12 @@ namespace WalkMyDog.Controllers
             {
                 WalkerController WalkerController = new WalkerController();
                 IWalkerView WalkerView = WindowFormsFactory.CreateWalkerView(this);
+
+
                 if (User.Id == CurrentUser.Id)
                 {
                     WalkerView.AdjustEditView();
+
                 }
                 else
                 {

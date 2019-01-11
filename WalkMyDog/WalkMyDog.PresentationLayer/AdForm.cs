@@ -142,5 +142,6 @@ namespace WalkMyDog.PresentationLayer
             CreateAdButton.Hide();
         }
 
+
     }
 }

@@ -97,10 +97,6 @@ namespace WalkMyDog.Controllers
             User.Dogs = WalkerView.Dogs;
             User.Experience = WalkerView.Experience;
 
-
-
-            //Walker.Status = WalkerView.Status;
-
             UserRepository.UpdateWalker(User);
 
 

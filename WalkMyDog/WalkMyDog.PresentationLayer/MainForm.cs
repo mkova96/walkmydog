@@ -102,7 +102,7 @@ namespace WalkMyDog.PresentationLayer
             {
                 foreach (var o in value)
                 {
-                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Walker.Username, o.Price.ToString(), o.DogsNumber.ToString(),o.Id.ToString()})); ///// PAZI 
+                    WalkerAdsList.Items.Add(new ListViewItem(new[] { o.Date.ToShortDateString(), o.Walker.Username, o.Price.ToString(), o.DogsNumber.ToString(),o.Id.ToString(),o.Walker.Dogs.ToString(),o.Walker.Experience.ToString()})); ///// PAZI 
 
                 }
 
