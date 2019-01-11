@@ -202,6 +202,7 @@
             // priceNumeric
             // 
             this.priceNumeric.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.priceNumeric.DecimalPlaces = 1;
             this.priceNumeric.Location = new System.Drawing.Point(478, 148);
             this.priceNumeric.Margin = new System.Windows.Forms.Padding(4);
             this.priceNumeric.Name = "priceNumeric";

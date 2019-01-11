@@ -125,7 +125,6 @@ namespace WalkMyDog.PresentationLayer
 
         public void AdjustCreateView()
         {
-            AcceptAdButton.Hide();
             ViewOwnerDetailsButton.Hide();
             DeleteAdButton.Hide();
             UpdateAdButton.Hide();
