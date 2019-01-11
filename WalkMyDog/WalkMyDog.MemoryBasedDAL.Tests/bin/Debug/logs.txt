@@ -1,0 +1,29 @@
+
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 163
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 163
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 163
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 5 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 163
