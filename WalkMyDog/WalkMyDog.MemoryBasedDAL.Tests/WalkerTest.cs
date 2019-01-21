@@ -19,7 +19,7 @@ namespace WalkMyDog.MemoryBasedDAL.Tests
             repository.AddUser(walker);
 
             Walker walkie = repository.GetWalker("test123", "testnaLozinka");
-            Debug.Assert(walkie != walker); ///razlicita su-find out why
+            Debug.Assert(walkie.Id.Equals(walker.Id));
         }
 
         [TestMethod]

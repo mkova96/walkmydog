@@ -56,13 +56,4 @@ namespace WalkMyDog.MemoryBasedDAL.Mappings
             Map(b => b.Dogs).Column("Dogs").Not.Nullable();
         }
     }
-
-    class AdminMap : SubclassMap<Admin>
-    {
-        public AdminMap()
-        {
-            Table("Admin");
-            Abstract();
-        }
-    }
 }

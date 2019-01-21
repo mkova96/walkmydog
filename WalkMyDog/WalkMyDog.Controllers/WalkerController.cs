@@ -57,7 +57,7 @@ namespace WalkMyDog.Controllers
                 return null;
             }
 
-            if (Age < 15)
+            if (Age < 0)
             {
                 MessageBox.Show("Broj godina ne može biti negativan");
                 return null;

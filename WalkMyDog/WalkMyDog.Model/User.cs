@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WalkMyDog.Model
 {
-    public enum UserType { ADMIN, WALKER, OWNER };
+    public enum UserType {WALKER, OWNER };
 
     public abstract class User : EntityBase<int>
     {

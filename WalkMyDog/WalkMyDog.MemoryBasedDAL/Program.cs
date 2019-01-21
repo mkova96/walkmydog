@@ -20,7 +20,7 @@ namespace WalkMyDog.MemoryBasedDAL
         {
 
             OwnerAd Ad = new OwnerAd(100, "Trazim setaca", AdStatus.ACTIVE, "Svi psi su buldozi", new DateTime(), 4,2,null);
-            Owner Owner = new Owner("admin", "admin", "Ivan", "Adminović","12346789", "Pantovcak 21", "Zagreb", 50,UserType.ADMIN, new List<OwnerAd>());
+            Owner Owner = new Owner("admin", "admin", "Ivan", "Adminović","12346789", "Pantovcak 21", "Zagreb", 50,UserType.OWNER, new List<OwnerAd>());
             Ad.Owner = (Owner)Owner;
             Owner.AddAd(Ad);
             object id = 0;

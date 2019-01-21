@@ -19,7 +19,8 @@ namespace WalkMyDog.MemoryBasedDAL.owners
             repository.AddUser(Owner);
 
             Owner owney = repository.GetOwner("owner123", "testnaLozinka");
-            Debug.Assert(owney != Owner); ///razlicita su-find out why
+            System.Diagnostics.Debug.WriteLine(owney.Id.ToString() + "IDEEE " + Owner.Id.ToString());
+            Debug.Assert(owney.Age.Equals(Owner.Age)); 
         }
 
         [TestMethod]

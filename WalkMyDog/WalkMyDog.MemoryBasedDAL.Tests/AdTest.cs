@@ -34,6 +34,7 @@ namespace WalkMyDog.MemoryBasedDAL.Tests
                 UserType.OWNER,true,true, new List<WalkerAd>());
             Ad WalkerAd = new WalkerAd(55.0, "Setam sve vrste pasa POVOLJNO", AdStatus.ACTIVE,
                 "Po mogucnosti zvati izmedju 14 i 19h", new DateTime(2019, 7, 28, 9, 15, 0), 3, 4, Walker);
+
             Walker.AddAd((WalkerAd)WalkerAd);
 
             UserRepository repository = new UserRepository();

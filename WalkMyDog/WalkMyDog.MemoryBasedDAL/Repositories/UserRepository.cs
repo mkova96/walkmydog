@@ -97,10 +97,7 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
             return DeleteUser(User);
 
         }
-        public Admin GetAdmin(int Id)
-        {
-            return GetUser<Admin>(Id);
-        }
+
         public Walker GetWalker(int Id)
         {
             return GetUser<Walker>(Id);
@@ -135,10 +132,7 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
             }
             return User;
         }
-        public Admin GetAdmin(string Username, string Password)
-        {
-            return (Admin)GetUser<Admin>(Username, Password);
-        }
+
         public Walker GetWalker(string Username, string Password)
         {
             return (Walker)GetUser<Walker>(Username, Password);

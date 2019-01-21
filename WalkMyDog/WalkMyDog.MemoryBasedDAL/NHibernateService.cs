@@ -39,22 +39,18 @@ namespace WalkMyDog.MemoryBasedDAL
             ISessionFactory sessionFactory = null;
             try
             {
-                // AppDomain.CurrentDomain.SetData("DataDirectory", "c:/");
-                //   Object datadir = AppDomain.CurrentDomain.GetData("DataDirectory");
+
 
                 var nhConfig = Fluently.Configure()
                     .Database(SQLiteConfiguration.Standard
                           .ConnectionString("data source=|DataDirectory|test.db;")
-                        //   .ConnectionString("data source=c:/(localdb)baza.db;")
                         .AdoNetBatchSize(100))
                     .Mappings(mappings => mappings.FluentMappings.AddFromAssemblyOf<UserMap>())
                     .BuildConfiguration();
 
                 sessionFactory = nhConfig.BuildSessionFactory();
                 var schemaExport = new SchemaUpdate(nhConfig);
-                //var schemaExport = new SchemaExport(nhConfig);
                 schemaExport.Execute(true, true);
-                //schemaExport.Create(false, true); 
 
             }
             catch (Exception e)
