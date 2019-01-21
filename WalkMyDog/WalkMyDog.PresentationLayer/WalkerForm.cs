@@ -205,11 +205,6 @@ namespace WalkMyDog.PresentationLayer
 
         }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void UpdateWalker(object sender, EventArgs e)
         {
             MainFormController.UpdateWalker(this);
@@ -217,7 +212,7 @@ namespace WalkMyDog.PresentationLayer
 
         private void WalkerForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            MainFormController.CloseLogin();
+            MainFormController.CloseThatFrom();
 
         }
     }

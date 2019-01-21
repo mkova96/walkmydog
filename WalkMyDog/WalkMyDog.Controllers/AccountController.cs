@@ -21,16 +21,11 @@ namespace WalkMyDog.Controllers
             if (Username.Length == 0 || Password.Length == 0)
             {
 
-                MessageBox.Show("Please fill all the fields");
+                MessageBox.Show("Niste unijeli korisničko ime/lozinku");
                 return null;
             }
             var frm = (Form)LoginView;
-            Admin Admin = UserRepository.GetAdmin(Username, Password);
-            if (Admin != null)
-            {
-                return Admin;
-                //  MainController.ShowAdminView()
-            }
+
             Walker Walker = UserRepository.GetWalker(Username, Password);
             if (Walker != null)
             {
@@ -48,7 +43,7 @@ namespace WalkMyDog.Controllers
                 return Owner;
             }
 
-            MessageBox.Show("Invalid username or password, please try again.");
+            MessageBox.Show("Netočno korisničko ime ili lozinka");
             return null;
 
 

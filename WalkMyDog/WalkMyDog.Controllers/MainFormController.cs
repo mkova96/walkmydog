@@ -12,7 +12,6 @@ namespace WalkMyDog.Controllers
 {
     public class MainFormController : IMainFormController
     {
-        private bool DefaultModelLoaded = false;
 
         private User CurrentUser;
 
@@ -131,7 +130,6 @@ namespace WalkMyDog.Controllers
             {
                 return new List<OwnerAd>();
             }
-            //int end = Ads.Count < 5 ? Ads.Count : 5;
             return Ads.GetRange(0, Ads.Count);
         }
         private List<WalkerAd> getWalkerAds()
@@ -141,7 +139,6 @@ namespace WalkMyDog.Controllers
             {
                 return new List<WalkerAd>();
             }
-            //int end = Ads.Count < 5 ? Ads.Count : 5;
             return Ads.GetRange(0,Ads.Count);
         }
 
@@ -155,9 +152,7 @@ namespace WalkMyDog.Controllers
 
             AccountController.ShowLoginForm(LoginView);
 
-            // LoginController.Login(UserRepository, LoginView, this);
         }
-
 
         public void ShowWalkerForm(Form LoginView)
         {
@@ -242,7 +237,7 @@ namespace WalkMyDog.Controllers
             }
 
 
-             if (GetOwner(Id, AdRepository).Username!= CurrentUser.Username)// dodan uvjet
+             if (GetOwner(Id, AdRepository).Username!= CurrentUser.Username)
               {
                 AdForm.NotUsersAd();
               }
@@ -250,13 +245,12 @@ namespace WalkMyDog.Controllers
 
 
              AdController AdController = new AdController();
-            //AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
             AdController.ShowAdForm(AdForm, Id, UserRepository, AdRepository, CurrentUser);
 
 
             
         }
-        public void ShowAdForm(IMainView MainView) ///MJENJAM
+        public void ShowAdForm(IMainView MainView) 
         {
             var frm = (Form)MainView;
             frm.Hide();
@@ -291,7 +285,6 @@ namespace WalkMyDog.Controllers
         {
             CurrentUser = null;
             MainView.DisableMenu();
-            MainView.SetWelcomeLabel("");
             MainView.ShowLoginButton();
         }
 
@@ -335,7 +328,7 @@ namespace WalkMyDog.Controllers
             return AdRepository.GetOwnerAd(Id);
         }
 
-        public void CloseLogin()
+        public void CloseThatFrom()
         {
             if (CurrentUser == null)
             {

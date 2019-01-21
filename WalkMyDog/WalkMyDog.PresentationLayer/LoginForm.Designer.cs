@@ -82,7 +82,7 @@
             this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.loginButton.Size = new System.Drawing.Size(136, 28);
+            this.loginButton.Size = new System.Drawing.Size(156, 45);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Prijavi se";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -97,14 +97,14 @@
             this.label3.Size = new System.Drawing.Size(251, 88);
             this.label3.TabIndex = 8;
             this.label3.Text = "Prijava";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // createWalkerLink
             // 
             this.createWalkerLink.AutoSize = true;
+            this.createWalkerLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.createWalkerLink.Location = new System.Drawing.Point(207, 319);
             this.createWalkerLink.Name = "createWalkerLink";
-            this.createWalkerLink.Size = new System.Drawing.Size(136, 17);
+            this.createWalkerLink.Size = new System.Drawing.Size(187, 25);
             this.createWalkerLink.TabIndex = 9;
             this.createWalkerLink.TabStop = true;
             this.createWalkerLink.Text = "Registiraj se (Setac)";
@@ -113,9 +113,10 @@
             // createOwnerLink
             // 
             this.createOwnerLink.AutoSize = true;
-            this.createOwnerLink.Location = new System.Drawing.Point(207, 345);
+            this.createOwnerLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.createOwnerLink.Location = new System.Drawing.Point(207, 360);
             this.createOwnerLink.Name = "createOwnerLink";
-            this.createOwnerLink.Size = new System.Drawing.Size(147, 17);
+            this.createOwnerLink.Size = new System.Drawing.Size(202, 25);
             this.createOwnerLink.TabIndex = 10;
             this.createOwnerLink.TabStop = true;
             this.createOwnerLink.Text = "Regstriraj se (Vlasnik)";
@@ -147,11 +148,10 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "WalkMyDog";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
-
 
         }
 

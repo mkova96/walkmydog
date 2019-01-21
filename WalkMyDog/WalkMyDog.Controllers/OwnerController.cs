@@ -47,21 +47,26 @@ namespace WalkMyDog.Controllers
             if (Username.Length == 0 || Password.Length == 0 || Name.Length == 0 || Surname.Length == 0
                 || Address.Length == 0 || City.Length == 0 || PhoneNumber.Length == 0)
             {
-                MessageBox.Show("Please fill all the fields.");
+                MessageBox.Show("Obvezno je ispuniti sva polja");
+                return null;
+            }
+            if (Age<1)
+            {
+                MessageBox.Show("Broj godina ne može biti negativan");
                 return null;
             }
 
             Owner Owner = UserRepository.GetOwner(Username, Password);
             if (Owner != null)
             {
-                MessageBox.Show("User with inserted username and password already exists. Please choose another one.");
+                MessageBox.Show("Korisnik s unesenim korisničkim imenom već postoji.");
                 return null;
             }
 
             Owner = (Owner)UserFactory.CreateOwner(Username, Password,Name, Surname, PhoneNumber, Address, City, Age, UserType.OWNER);
             if (UserRepository.AddUser(Owner) == false)
             {
-                MessageBox.Show("Error creating account, please try again");
+                MessageBox.Show("Greška");
                 return null;
             }
             return Owner;

@@ -51,7 +51,7 @@ namespace WalkMyDog.PresentationLayer
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            controller.CloseLogin();
+            controller.CloseThatFrom();
 
         }
 
@@ -60,9 +60,6 @@ namespace WalkMyDog.PresentationLayer
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

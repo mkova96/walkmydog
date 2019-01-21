@@ -280,7 +280,6 @@
             this.label14.Size = new System.Drawing.Size(199, 88);
             this.label14.TabIndex = 41;
             this.label14.Text = "Šetač";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label17
             // 

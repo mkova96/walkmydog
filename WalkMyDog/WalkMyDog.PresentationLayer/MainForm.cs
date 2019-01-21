@@ -74,14 +74,6 @@ namespace WalkMyDog.PresentationLayer
             this.NewAdButton.Show();
         }
 
-
-
-        public void SetWelcomeLabel(string text)
-        {
-            //welcomeLabel.Text = text;
-        }
-
-
         public void EnableMenu()
         {
             menu.Enabled = true;
@@ -142,9 +134,5 @@ namespace WalkMyDog.PresentationLayer
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

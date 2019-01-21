@@ -58,7 +58,12 @@ namespace WalkMyDog.Controllers
 
             if (Price == 0 || Description == "" || Title == "" || Hours == 0 || DogsNumber == 0)
             {
-                MessageBox.Show("Please fill all the fields.");
+                MessageBox.Show("Obvezno je ispuniti sva polja");
+                return;
+            }
+            if (Price <= 0 || DogsNumber<0 || Hours<0)
+            {
+                MessageBox.Show("Broj godina/Cijena/Broj pasa ne može biti negativan");
                 return;
             }
 

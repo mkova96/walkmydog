@@ -13,8 +13,6 @@ namespace WalkMyDog.BaseLib
 
         void ShowLoginButton();
         void HideLoginButton();
-        void SetWelcomeLabel(string text);
-
         void EnableMenu();
         void DisableMenu();
 
