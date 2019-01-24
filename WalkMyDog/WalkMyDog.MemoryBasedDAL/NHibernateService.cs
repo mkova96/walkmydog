@@ -52,6 +52,8 @@ namespace WalkMyDog.MemoryBasedDAL
                 var schemaExport = new SchemaUpdate(nhConfig);
                 schemaExport.Execute(true, true);
 
+
+
             }
             catch (Exception e)
             {

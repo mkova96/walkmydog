@@ -161,3 +161,805 @@ NHibernate
    at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
    at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
    at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 157
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 18 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 157
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 19 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 157
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 20 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 157
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 21 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 157
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 23 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username, String Password) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] Error dehydrating property value for WalkMyDog.Model.OwnerAd.Owner 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.AdRepository.UpdateAd(Ad Ad) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\AdRepository.cs:line 97
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 5 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 6 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 7 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 8 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 9 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 10 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 11 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#1001][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#5005][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#7007][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 5 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 6 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 7 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 8 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#5005][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#7007][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#9009][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#11015][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#11016][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#1001][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1002][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1004][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#1012][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 6 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1001][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1003][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#2002][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#4004][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#3013][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#3016][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#1011][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1014][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at NHibernate.Criterion.QueryOver`1.SingleOrDefault()
+   at NHibernate.Criterion.QueryOver`1.NHibernate.IQueryOver<TRoot>.SingleOrDefault()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#9009][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#19019][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#21021][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#23023][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#3009][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#5011][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#7012][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#9014][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#11021][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#11024][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#13023][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#13026][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51

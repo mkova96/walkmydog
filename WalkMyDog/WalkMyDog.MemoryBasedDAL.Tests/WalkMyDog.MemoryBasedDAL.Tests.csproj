@@ -85,7 +85,6 @@
     <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdTest.cs" />
     <Compile Include="OwnerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WalkerTest.cs" />

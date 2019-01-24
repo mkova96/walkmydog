@@ -44,7 +44,7 @@ namespace WalkMyDog.Controllers
             return AdRepository.GetOwnerAd(Id);
         }
 
-        public void CreateAd(IAdView AdView, IUserRepository UserRepository, User CurrentUser)
+        public Ad CreateAd(IAdView AdView, IUserRepository UserRepository, User CurrentUser)
         {
             AdView.AdjustCreateView();
             double Price = AdView.Price;
@@ -55,39 +55,39 @@ namespace WalkMyDog.Controllers
             int DogsNumber = AdView.DogsNumber;
             int Hours = AdView.Hours;
 
+            Ad Ad;
+
 
             if (Price == 0 || Description == "" || Title == "" || Hours == 0 || DogsNumber == 0)
             {
                 MessageBox.Show("Obvezno je ispuniti sva polja");
-                return;
+                return null;
             }
-            if (Price <= 0 || DogsNumber<0 || Hours<0)
+            if (Price <= 0 || DogsNumber<=0 || Hours<=0)
             {
-                MessageBox.Show("Broj godina/Cijena/Broj pasa ne može biti negativan");
-                return;
+                MessageBox.Show("Broj godina/Cijena/Broj pasa ne može manji ili jednak 0");
+                return null;
             }
 
 
             if (CurrentUser.UserType == UserType.WALKER)
             {
-                Ad Ad = AdFactory.CreateWalkerAd(Price,Title,AdStatus, Description, Date, DogsNumber, Hours, (Walker)CurrentUser);
+                Ad = AdFactory.CreateWalkerAd(Price,Title,AdStatus, Description, Date, DogsNumber, Hours, (Walker)CurrentUser);
                 Walker Walker = (Walker)CurrentUser;
                 Walker.AddAd((WalkerAd)Ad);
                 UserRepository.UpdateUser(Walker);
             }
-            else if (CurrentUser.UserType == UserType.OWNER)
+            else
             {
-                Ad Ad = AdFactory.CreateOwnerAd(Price, Title, AdStatus, Description, Date, DogsNumber, Hours, (Owner)CurrentUser);
+                Ad = AdFactory.CreateOwnerAd(Price, Title, AdStatus, Description, Date, DogsNumber, Hours, (Owner)CurrentUser);
                 Owner Owner = (Owner)CurrentUser;
                 Owner.AddAd((OwnerAd)Ad);
                 UserRepository.UpdateUser(Owner);
             }
-            else
-            {
-                //
-            }
+            
             var form = (Form)AdView;
             form.Hide();
+            return Ad;
         }
 
         public void UpdateAd(IAdView AdView,

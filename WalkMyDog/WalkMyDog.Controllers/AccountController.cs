@@ -26,7 +26,7 @@ namespace WalkMyDog.Controllers
             }
             var frm = (Form)LoginView;
 
-            Walker Walker = UserRepository.GetWalker(Username, Password);
+            Walker Walker = UserRepository.GetWalker(Username);
             if (Walker != null)
             {
                 frm.Hide();
@@ -34,7 +34,7 @@ namespace WalkMyDog.Controllers
                 return Walker;
             }
 
-            Owner Owner = UserRepository.GetOwner(Username, Password);
+            Owner Owner = UserRepository.GetOwner(Username);
 
             if (Owner != null)
             {

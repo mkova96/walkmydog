@@ -91,9 +91,9 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
 
         }
 
-        public bool DeleteUser(string Username, string Password)
+        public bool DeleteUser(string Username)
         {
-            User User = GetUser<User>(Username, Password);
+            User User = GetUser<User>(Username);
             return DeleteUser(User);
 
         }
@@ -133,16 +133,18 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
             return User;
         }
 
-        public Walker GetWalker(string Username, string Password)
+
+
+        public Walker GetWalker(string Username)
         {
-            return (Walker)GetUser<Walker>(Username, Password);
+            return (Walker)GetUser<Walker>(Username);
         }
-        public Owner GetOwner(string Username, string Password)
+        public Owner GetOwner(string Username)
         {
-            return (Owner)GetUser<Owner>(Username, Password);
+            return (Owner)GetUser<Owner>(Username);
         }
 
-        private T GetUser<T>(string Username, string Password) where T : User
+        private T GetUser<T>(string Username) where T : User
 
         {
             T User = default(T);
@@ -154,8 +156,7 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
                     {
 
 
-                        User = session.QueryOver<T>().Where(c => c.Username == Username)
-                            .And(c => c.Password == Password).SingleOrDefault();
+                        User = session.QueryOver<T>().Where(c => c.Username == Username).SingleOrDefault();
                         transaction.Commit();
                     }
                     session.Clear();

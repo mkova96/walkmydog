@@ -83,7 +83,6 @@
     <Compile Include="Mappings\AdMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="NHibernateService.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AdRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />

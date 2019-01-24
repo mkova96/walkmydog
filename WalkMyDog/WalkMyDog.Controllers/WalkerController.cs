@@ -63,7 +63,7 @@ namespace WalkMyDog.Controllers
                 return null;
 
             }
-            Walker Walker = UserRepository.GetWalker(Username, Password);
+            Walker Walker = UserRepository.GetWalker(Username);
             if (Walker != null)
             {
                 MessageBox.Show("Korisnik s unesenim korisničkim imenom već postoji.");

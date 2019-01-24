@@ -56,7 +56,7 @@ namespace WalkMyDog.Controllers
                 return null;
             }
 
-            Owner Owner = UserRepository.GetOwner(Username, Password);
+            Owner Owner = UserRepository.GetOwner(Username);
             if (Owner != null)
             {
                 MessageBox.Show("Korisnik s unesenim korisničkim imenom već postoji.");

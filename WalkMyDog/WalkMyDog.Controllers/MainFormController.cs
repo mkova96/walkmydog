@@ -194,7 +194,10 @@ namespace WalkMyDog.Controllers
         public void CreateAd(IAdView AdForm)
         {
             AdController AdController = new AdController();
-            AdController.CreateAd(AdForm, UserRepository, CurrentUser);
+            if (AdController.CreateAd(AdForm, UserRepository, CurrentUser) == null)
+            {
+                return;
+            }
 
             ShowMainForm();
         }
@@ -254,8 +257,6 @@ namespace WalkMyDog.Controllers
         {
             var frm = (Form)MainView;
             frm.Hide();
-
-
 
             AdController AdController = new AdController();
             AdForm AdForm = (AdForm)WindowFormsFactory.CreateAdView(this);
