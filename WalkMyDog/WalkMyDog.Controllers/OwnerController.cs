@@ -50,14 +50,17 @@ namespace WalkMyDog.Controllers
                 MessageBox.Show("Obvezno je ispuniti sva polja");
                 return null;
             }
-            if (Age<1)
+            if (Age<17)
             {
-                MessageBox.Show("Broj godina ne može biti negativan");
+                MessageBox.Show("Morate biti punoljetni.");
                 return null;
             }
 
             Owner Owner = UserRepository.GetOwner(Username);
-            if (Owner != null)
+            Walker Walker = UserRepository.GetWalker(Username);
+
+
+            if (Owner != null || Walker != null)
             {
                 MessageBox.Show("Korisnik s unesenim korisničkim imenom već postoji.");
                 return null;
@@ -72,9 +75,20 @@ namespace WalkMyDog.Controllers
             return Owner;
         }
 
-        public void UpdateOwner(IOwnerView OwnerView,
+        public bool UpdateOwner(IOwnerView OwnerView,
             IUserRepository UserRepository, User User)
         {
+            if (OwnerView.Username.Length == 0 || OwnerView.Password.Length == 0 || OwnerView.OwnerName.Length == 0 || OwnerView.Surname.Length == 0
+                || OwnerView.Address.Length == 0 || OwnerView.City.Length == 0 || OwnerView.PhoneNumber.Length == 0)
+            {
+                MessageBox.Show("Obvezno je ispuniti sva polja");
+                return false;
+            }
+            if (OwnerView.Age < 17)
+            {
+                MessageBox.Show("Morate biti punoljetni.");
+                return false;
+            }
 
             User.Name = OwnerView.OwnerName;
             User.Address = OwnerView.Address;
@@ -83,13 +97,27 @@ namespace WalkMyDog.Controllers
             User.Password = OwnerView.Password;
             User.PhoneNumber = OwnerView.PhoneNumber;
             User.Surname = OwnerView.Surname;
+
+            if (User.Username != OwnerView.Username)
+            {
+                Owner Owner = UserRepository.GetOwner(OwnerView.Username);
+                Walker Walker = UserRepository.GetWalker(OwnerView.Username);
+
+
+                if (Owner != null || Walker !=null)
+                {
+                    MessageBox.Show("Korisnik s unesenim korisničkim imenom već postoji.");
+                    return false;
+                }
+            }
+
             User.Username = OwnerView.Username;
-
             UserRepository.UpdateUser(User);
-
 
             var frm = (Form)OwnerView;
             frm.Hide();
+            return true;
+                       
         }
     }
 }

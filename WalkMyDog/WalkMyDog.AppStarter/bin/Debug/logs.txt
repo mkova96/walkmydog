@@ -26,3 +26,88 @@ NHibernate
    at NHibernate.Cfg.Configuration.BuildSettings()
    at NHibernate.Cfg.Configuration.BuildSessionFactory()
    at WalkMyDog.MemoryBasedDAL.NHibernateService.OpenSessionFactory() in C:\Users\MARIO\source\repos\WalkMyDog\WalkMyDog.MemoryBasedDAL\NHibernateService.cs:line 53
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 2 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 3 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 159
+[01-Jan-01 12:00:00 AM] query did not return a unique result: 4 
+NHibernate
+    at NHibernate.Impl.AbstractQueryImpl.UniqueElement(IList list)
+   at NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.GetUser[T](String Username) in C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 199
+[01-Jan-01 12:00:00 AM] Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [WalkMyDog.Model.OwnerAd#18018] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.UpdateUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 258
+[01-Jan-01 12:00:00 AM] Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [WalkMyDog.Model.OwnerAd#18018] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.UpdateUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 258
+[01-Jan-01 12:00:00 AM] Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [WalkMyDog.Model.OwnerAd#18018] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.UpdateUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 258

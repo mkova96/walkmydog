@@ -33,7 +33,6 @@
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.DogsNumberNumeric = new System.Windows.Forms.NumericUpDown();
-            this.HoursNumeric = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ViewOwnerDetailsButton = new System.Windows.Forms.Button();
@@ -46,9 +45,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.DeleteAdButton = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -99,26 +99,12 @@
             // DogsNumberNumeric
             // 
             this.DogsNumberNumeric.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.DogsNumberNumeric.Location = new System.Drawing.Point(475, 213);
+            this.DogsNumberNumeric.Location = new System.Drawing.Point(475, 275);
             this.DogsNumberNumeric.Margin = new System.Windows.Forms.Padding(4);
             this.DogsNumberNumeric.Name = "DogsNumberNumeric";
             this.DogsNumberNumeric.Size = new System.Drawing.Size(235, 22);
-            this.DogsNumberNumeric.TabIndex = 24;
+            this.DogsNumberNumeric.TabIndex = 21;
             this.DogsNumberNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // HoursNumeric
-            // 
-            this.HoursNumeric.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.HoursNumeric.Location = new System.Drawing.Point(475, 275);
-            this.HoursNumeric.Margin = new System.Windows.Forms.Padding(4);
-            this.HoursNumeric.Name = "HoursNumeric";
-            this.HoursNumeric.Size = new System.Drawing.Size(235, 22);
-            this.HoursNumeric.TabIndex = 21;
-            this.HoursNumeric.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -256,11 +242,26 @@
             this.checkBox1.TabIndex = 39;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown1.Location = new System.Drawing.Point(476, 214);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(235, 22);
+            this.numericUpDown1.TabIndex = 40;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // AdForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 555);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.DeleteAdButton);
             this.Controls.Add(this.label3);
@@ -272,7 +273,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.TitleTextBox);
             this.Controls.Add(this.DogsNumberNumeric);
-            this.Controls.Add(this.HoursNumeric);
             this.Controls.Add(this.ViewOwnerDetailsButton);
             this.Controls.Add(this.CreateAdButton);
             this.Controls.Add(this.UpdateAdButton);
@@ -282,13 +282,12 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdForm";
             this.Text = "Oglas";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseForm2);
             ((System.ComponentModel.ISupportInitialize)(this.DogsNumberNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HoursNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.priceNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseForm2);
-
 
         }
 
@@ -299,7 +298,6 @@
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown DogsNumberNumeric;
-        private System.Windows.Forms.NumericUpDown HoursNumeric;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ViewOwnerDetailsButton;
@@ -312,5 +310,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button DeleteAdButton;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

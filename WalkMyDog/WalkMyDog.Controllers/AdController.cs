@@ -48,17 +48,16 @@ namespace WalkMyDog.Controllers
         {
             AdView.AdjustCreateView();
             double Price = AdView.Price;
-            DateTime Date = DateTime.Now.Date; //PAZIIIIIIII
+            DateTime Date = DateTime.Now.Date; 
             string Description = AdView.Description;
             string Title = AdView.Title;
-            AdStatus AdStatus = AdStatus.ACTIVE; //PAZIIIIII
+            AdStatus AdStatus = AdStatus.ACTIVE; 
             int DogsNumber = AdView.DogsNumber;
             int Hours = AdView.Hours;
 
             Ad Ad;
 
-
-            if (Price == 0 || Description == "" || Title == "" || Hours == 0 || DogsNumber == 0)
+            if (Description == "" || Title == "")
             {
                 MessageBox.Show("Obvezno je ispuniti sva polja");
                 return null;
@@ -87,10 +86,11 @@ namespace WalkMyDog.Controllers
             
             var form = (Form)AdView;
             form.Hide();
+
             return Ad;
         }
 
-        public void UpdateAd(IAdView AdView,
+        public bool UpdateAd(IAdView AdView,
            IAdRepository AdRepository, Ad Ad)
         {
 
@@ -99,15 +99,24 @@ namespace WalkMyDog.Controllers
             Ad.DogsNumber = AdView.DogsNumber;
             Ad.Hours = AdView.Hours;
             Ad.Price = AdView.Price;
-
             Ad.AdStatus = AdView.AdStatus;
 
+            if (Ad.Description == "" || Ad.Title == "")
+            {
+                MessageBox.Show("Obvezno je ispuniti sva polja");
+                return false;
+            }
+            if (Ad.Price <= 0 || Ad.DogsNumber <= 0 || Ad.Hours <= 0)
+            {
+                MessageBox.Show("Broj godina/Cijena/Broj pasa ne može manji ili jednak 0");
+                return false;
+            }
 
             AdRepository.UpdateAd(Ad);
 
-
             var frm = (Form)AdView;
             frm.Hide();
+            return true;
         }
 
         public void DeleteAd(IAdView AdView,

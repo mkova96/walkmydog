@@ -68,3 +68,38 @@ C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.csproj.CopyComplete
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.dll
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.MemoryBasedDAL.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.MemoryBasedDAL.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.MemoryBasedDAL.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Antlr3.Runtime.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\FluentNHibernate.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Iesi.Collections.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\NHibernate.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Remotion.Linq.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.BaseLib.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.BaseLib.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.BaseLib.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\WalkMyDog.Model.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Antlr3.Runtime.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\FluentNHibernate.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Iesi.Collections.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\NHibernate.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Remotion.Linq.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.csprojAssemblyReference.cache
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.csproj.CopyComplete
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.MemoryBasedDAL\obj\Debug\WalkMyDog.MemoryBasedDAL.pdb

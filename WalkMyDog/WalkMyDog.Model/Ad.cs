@@ -25,7 +25,7 @@ namespace WalkMyDog.Model
             this.Description = Description;
             this.Date = Date;
             this.DogsNumber = DogsNumber;
-            this.Hours = this.Hours;
+            this.Hours =Hours;
         }
 
         public Ad()

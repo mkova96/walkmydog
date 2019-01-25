@@ -72,3 +72,40 @@ C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Con
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csproj.CopyComplete
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.dll
 C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Controllers.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Controllers.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Controllers.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Antlr3.Runtime.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\EntityFramework.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\FluentNHibernate.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Iesi.Collections.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\NHibernate.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Remotion.Linq.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\System.Data.SQLite.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.BaseLib.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Model.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.PresentationLayer.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.BaseLib.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.BaseLib.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Model.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.Model.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\WalkMyDog.PresentationLayer.pdb
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Antlr3.Runtime.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\EntityFramework.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\FluentNHibernate.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Iesi.Collections.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\NHibernate.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Remotion.Linq.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\Remotion.Linq.EagerFetching.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\System.Data.SQLite.xml
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csprojAssemblyReference.cache
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.csproj.CopyComplete
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.dll
+C:\Users\MARIO\walkmydog\WalkMyDog 25.1\WalkMyDog.Controllers\obj\Debug\WalkMyDog.Controllers.pdb

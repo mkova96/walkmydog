@@ -31,21 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.WalkerAdsList = new System.Windows.Forms.ListView();
-            this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.username = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dogs = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.psi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.iskustvo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.username = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dogs = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.OwnerAdsList = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.loginButton = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,10 +81,7 @@
             this.username,
             this.Price,
             this.dogs,
-            this.Id,
-            this.psi,
-            this.iskustvo,
-            this.status});
+            this.Id});
             this.WalkerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.WalkerAdsList.HoverSelection = true;
             this.WalkerAdsList.Location = new System.Drawing.Point(695, 247);
@@ -101,41 +94,29 @@
             this.WalkerAdsList.SelectedIndexChanged += new System.EventHandler(this.WalkerAdsList_SelectedIndexChanged);
             this.WalkerAdsList.Click += new System.EventHandler(this.ShowWalkerAd);
             // 
-            // Id
+            // date
             // 
-            this.Id.DisplayIndex = 4;
-            this.Id.Text = "Id";
+            this.date.Text = "Datum izdavanja";
+            this.date.Width = 123;
             // 
             // username
             // 
             this.username.Text = "Korisnik";
             this.username.Width = 103;
             // 
-            // dogs
-            // 
-            this.dogs.DisplayIndex = 3;
-            this.dogs.Text = "Broj pasa";
-            this.dogs.Width = 71;
-            // 
             // Price
             // 
-            this.Price.DisplayIndex = 2;
             this.Price.Text = "Cijena/sat (HRK)";
             this.Price.Width = 127;
             // 
-            // date
+            // dogs
             // 
-            this.date.DisplayIndex = 0;
-            this.date.Text = "Datum izdavanja";
-            this.date.Width = 123;
+            this.dogs.Text = "Broj pasa";
+            this.dogs.Width = 71;
             // 
-            // psi
+            // Id
             // 
-            this.psi.Text = "Psi?";
-            // 
-            // iskustvo
-            // 
-            this.iskustvo.Text = "iskustvo";
+            this.Id.Text = "Id";
             // 
             // OwnerAdsList
             // 
@@ -144,8 +125,7 @@
             this.columnHeader1,
             this.columnHeader3,
             this.columnHeader2,
-            this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader5});
             this.OwnerAdsList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OwnerAdsList.Location = new System.Drawing.Point(27, 247);
             this.OwnerAdsList.Margin = new System.Windows.Forms.Padding(4);
@@ -156,36 +136,29 @@
             this.OwnerAdsList.View = System.Windows.Forms.View.Details;
             this.OwnerAdsList.Click += new System.EventHandler(this.ShowOwnerAd);
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Datum izdavanja";
+            this.columnHeader4.Width = 115;
+            // 
             // columnHeader1
             // 
-            this.columnHeader1.DisplayIndex = 1;
             this.columnHeader1.Text = "Korisnik";
             this.columnHeader1.Width = 93;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.DisplayIndex = 3;
-            this.columnHeader2.Text = "Broj pasa";
-            this.columnHeader2.Width = 86;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Cijena/sat (HRK)";
             this.columnHeader3.Width = 116;
             // 
-            // columnHeader4
+            // columnHeader2
             // 
-            this.columnHeader4.DisplayIndex = 0;
-            this.columnHeader4.Text = "Datum izdavanja";
-            this.columnHeader4.Width = 115;
+            this.columnHeader2.Text = "Broj pasa";
+            this.columnHeader2.Width = 86;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Id";
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "status";
             // 
             // loginButton
             // 
@@ -304,9 +277,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button NewAdButton;
-        private System.Windows.Forms.ColumnHeader psi;
-        private System.Windows.Forms.ColumnHeader iskustvo;
-        private System.Windows.Forms.ColumnHeader status;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }

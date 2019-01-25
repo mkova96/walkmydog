@@ -297,19 +297,28 @@ namespace WalkMyDog.Controllers
         public void UpdateWalker(IWalkerView WalkerView)
         {
             WalkerController WalkerController = new WalkerController();
-            WalkerController.UpdateWalker(WalkerView, UserRepository, (Walker)CurrentUser);
+            if(WalkerController.UpdateWalker(WalkerView, UserRepository, (Walker)CurrentUser) == false)
+            {
+                return;
+            }
             ShowMainForm();
         }
         public void UpdateOwner(IOwnerView OwnerView)
         {
             OwnerController OwnerController = new OwnerController();
-            OwnerController.UpdateOwner(OwnerView, UserRepository,CurrentUser);
+            if (OwnerController.UpdateOwner(OwnerView, UserRepository, CurrentUser)==false)
+            {
+                return;
+            }
             ShowMainForm();
         }
         public void UpdateAd(IAdView AdView)
         {
             AdController AdController = new AdController();
-            AdController.UpdateAd(AdView, AdRepository, GetAd(AdView.AdId,AdRepository));
+            if(AdController.UpdateAd(AdView, AdRepository, GetAd(AdView.AdId, AdRepository)) == false)
+            {
+                return;
+            }
             ShowMainForm();
         }
         public void DeleteAd(IAdView AdView)

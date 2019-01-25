@@ -106,12 +106,12 @@ namespace WalkMyDog.PresentationLayer
         {
             get
             {
-                return (int)HoursNumeric.Value;
+                return (int)numericUpDown1.Value;
             }
 
             set
             {
-                HoursNumeric.Value = (decimal)value;
+                numericUpDown1.Value = (decimal)value;
             }
         }
         public int DogsNumber

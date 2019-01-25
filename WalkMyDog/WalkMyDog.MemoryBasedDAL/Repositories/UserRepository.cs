@@ -133,6 +133,37 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
             return User;
         }
 
+        private T GetUser<T>(string Username, string Password) where T : User
+
+        {
+            T User = default(T);
+            using (var session = NHibernateService.OpenSession())
+            {
+                try
+                {
+                    using (var transaction = session.BeginTransaction())
+                    {
+
+
+                        User = session.QueryOver<T>().Where(c => c.Username == Username)
+                            .And(c => c.Password == Password).SingleOrDefault();
+                        transaction.Commit();
+                    }
+                    session.Clear();
+                    //session.Close();
+
+                }
+                catch (Exception e)
+                {
+                    Logger.Log(e);
+                    return null;
+                }
+            }
+            return User;
+        }
+
+
+
 
 
         public Walker GetWalker(string Username)
@@ -142,6 +173,15 @@ namespace WalkMyDog.MemoryBasedDAL.Repositories
         public Owner GetOwner(string Username)
         {
             return (Owner)GetUser<Owner>(Username);
+        }
+
+        public Walker GetWalker(string Username,string Password)
+        {
+            return (Walker)GetUser<Walker>(Username,Password);
+        }
+        public Owner GetOwner(string Username, string Password)
+        {
+            return (Owner)GetUser<Owner>(Username,Password);
         }
 
         private T GetUser<T>(string Username) where T : User
