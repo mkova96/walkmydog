@@ -1,0 +1,70 @@
+
+[01-Jan-01 12:00:00 AM] Could not create the driver from NHibernate.Driver.SQLite20Driver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. 
+NHibernate
+    at NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   at NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   at NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   at NHibernate.Cfg.Configuration.BuildSettings()
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at WalkMyDog.MemoryBasedDAL.NHibernateService.OpenSessionFactory() in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\NHibernateService.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#1007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#3009][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Owner#5007][SQL: DELETE FROM Owner WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51
+[01-Jan-01 12:00:00 AM] could not delete: [WalkMyDog.Model.Walker#5016][SQL: DELETE FROM Walker WHERE Id = ?] 
+NHibernate
+    at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Int32 j, Object obj, SqlCommandInfo sql, ISessionImplementor session, Object[] loadedState)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Delete(Object id, Object version, Object obj, ISessionImplementor session)
+   at NHibernate.Action.EntityDeleteAction.Execute()
+   at NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   at NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   at NHibernate.Transaction.AdoTransaction.Commit()
+   at WalkMyDog.MemoryBasedDAL.Repositories.UserRepository.DeleteUser(User User) in C:\Users\MARIO\walkmydog\WalkMyDog\WalkMyDog.MemoryBasedDAL\Repositories\UserRepository.cs:line 51

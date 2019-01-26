@@ -51,9 +51,6 @@ namespace WalkMyDog.MemoryBasedDAL
                 sessionFactory = nhConfig.BuildSessionFactory();
                 var schemaExport = new SchemaUpdate(nhConfig);
                 schemaExport.Execute(true, true);
-
-
-
             }
             catch (Exception e)
             {
